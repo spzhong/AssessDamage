@@ -1,0 +1,8 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
+
+target 'AssessDamage' do
+pod 'DachenKit', :git => 'http://192.168.3.200/ios/DachenKit.git'
+
+
+end
