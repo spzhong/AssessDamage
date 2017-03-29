@@ -7,16 +7,17 @@
 //
 
 #import "MyUser.h"
+#import "User+CoreDataClass.h"
 
 @implementation MyUser
 
 
 //获取当前的用户
-+(MyUser *)currUser{
++(User *)currUser{
     NSString *currentUserId = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentUserId"];
     if (currentUserId!=nil) {
-        MyUser *user = nil;
-        user = (MyUser *)[CoreData selcet_OneData:@"User" withWhere_id:[NSString stringWithFormat:@"userId='%@'",currentUserId]];
+        User *user = nil;
+        user = (User *)[CoreData selcet_OneData:@"User" withWhere_id:[NSString stringWithFormat:@"userId='%@'",currentUserId]];
         return user;
     }else{
         return nil;
@@ -30,6 +31,7 @@
     
     self.key = [NSString stringWithFormat:@"%@",dic[@"key"]];
     self.pId = [NSString stringWithFormat:@"%@",dic[@"pId"]];
+    
     
 }
 

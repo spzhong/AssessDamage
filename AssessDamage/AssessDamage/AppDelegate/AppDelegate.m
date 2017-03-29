@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MyUser.h"
+#import "SignViewController.h"
+#import "MyUser.h"
 
 @interface AppDelegate ()
 
@@ -19,13 +21,61 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //登录
     
     
-    //
+    
+    UINavigationBar *navigationBar =  [UINavigationBar appearance];
+    [navigationBar setTranslucent:NO];
+    [navigationBar setBarTintColor:kThemeColor]; // 统一设置导航栏颜色
+    [navigationBar setTintColor:[UIColor whiteColor]]; // 统一设置导航栏按钮等颜色
+    [navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor],
+                                            NSFontAttributeName : [UIFont systemFontOfSize:20]}]; // 设置标题颜色
+    
+    //判断用户是否进行了登录
+    if (CurrUser==nil) {
+        //未登录
+        SignViewController *sign = [[SignViewController alloc] init];
+        UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:sign];
+        self.window.rootViewController = na;
+    }else{
+        [self exchangeRootViewControllerToMain];
+    }
+    
+    
+    
+    // 用通知来切换登录
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"kNFExchangeRootViewToLoginView" object:nil] subscribeNext:^(NSNotification *x) {
+        [self exchangeRootViewControllerToLogin];
+    }];
+    
+    // 用来切换的主界面
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"kNFExchangeRootViewToMainView" object:nil] subscribeNext:^(NSNotification *x) {
+        [self exchangeRootViewControllerToMain];
+    }];
+
     
     return YES;
 }
+
+
+-(void)exchangeRootViewControllerToMain{
+    //设置IM的数据
+    UIViewController *vc = VCInStoryboard(@"Main", @"MainViewController");
+    self.window.rootViewController = vc;
+}
+
+
+-(void)exchangeRootViewControllerToLogin{
+    //清空登录的标示
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"currentUserId"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    //进入登录的页面
+    SignViewController *sign = [[SignViewController alloc] init];
+    UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:sign];
+    self.window.rootViewController = na;
+}
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

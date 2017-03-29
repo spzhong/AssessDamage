@@ -19,6 +19,10 @@
 #import "BaseV.h"
 #import "MyUser.h"
 #import "CoreData.h"
-
-
+#import "UIView+Category.h"
+#import "UIImageView+Size.h"
+#import "Define.h"
+#import <ReactiveCocoa.h>
+#import "MyUser.h"
+#import "User+CoreDataClass.h"
 #endif /* PrefixHeader_pch */

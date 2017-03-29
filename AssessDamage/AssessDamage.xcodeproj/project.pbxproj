@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F07B15C1E812CDE00D7E221 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F07B15B1E812CDE00D7E221 /* NSString+Category.m */; };
+		6F07B15F1E812EB300D7E221 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F07B15E1E812EB300D7E221 /* Factory.m */; };
+		6F07B1621E812EE600D7E221 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F07B1611E812EE600D7E221 /* UIView+Category.m */; };
+		6F50DCBA1E8741F700FEAAD6 /* UIViewController+View.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F50DCB91E8741F700FEAAD6 /* UIViewController+View.m */; };
+		6F50DCC11E87A5C800FEAAD6 /* Lostdamage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F50DCC01E87A5C800FEAAD6 /* Lostdamage.m */; };
+		6F594CA41E84F1C9005F9B24 /* UIImageView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F594CA31E84F1C9005F9B24 /* UIImageView+Size.m */; };
+		6F594CA71E84F2C3005F9B24 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F594CA61E84F2C3005F9B24 /* UILabel+Category.m */; };
 		6F7051281E80F66D00272550 /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7051251E80F66D00272550 /* User+CoreDataClass.m */; };
 		6F7051291E80F66D00272550 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7051271E80F66D00272550 /* User+CoreDataProperties.m */; };
 		6F70512E1E80F87600272550 /* Cache+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F70512B1E80F87600272550 /* Cache+CoreDataClass.m */; };
 		6F70512F1E80F87600272550 /* Cache+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F70512D1E80F87600272550 /* Cache+CoreDataProperties.m */; };
 		6F7051321E80F8E600272550 /* CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7051311E80F8E600272550 /* CoreData.m */; };
+		6FA0120A1E8734090003E649 /* NSTimer+PauseTimerEMDT.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA012091E8734090003E649 /* NSTimer+PauseTimerEMDT.m */; };
+		6FA0120E1E87381F0003E649 /* SignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA0120D1E87381F0003E649 /* SignViewController.m */; };
+		6FA012131E873D470003E649 /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA012101E873D470003E649 /* ForgetViewController.m */; };
+		6FA012141E873D470003E649 /* ModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA012121E873D470003E649 /* ModifyViewController.m */; };
 		6FFF758F1E7FDF7F00C72937 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFF758E1E7FDF7F00C72937 /* CoreData.framework */; };
 		6FFF75D51E80D52A00C72937 /* AssessDamage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF75D31E80D52A00C72937 /* AssessDamage.xcdatamodeld */; };
 		DAB0F1DE1E7E07F500120478 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0F1DD1E7E07F500120478 /* main.m */; };
@@ -32,6 +43,21 @@
 
 /* Begin PBXFileReference section */
 		431DCED361E5037F7C298A19 /* Pods-AssessDamage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssessDamage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AssessDamage/Pods-AssessDamage.debug.xcconfig"; sourceTree = "<group>"; };
+		6F07B15A1E812CDE00D7E221 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		6F07B15B1E812CDE00D7E221 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		6F07B15D1E812EB300D7E221 /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		6F07B15E1E812EB300D7E221 /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
+		6F07B1601E812EE600D7E221 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		6F07B1611E812EE600D7E221 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		6F50DCB81E8741F700FEAAD6 /* UIViewController+View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+View.h"; sourceTree = "<group>"; };
+		6F50DCB91E8741F700FEAAD6 /* UIViewController+View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+View.m"; sourceTree = "<group>"; };
+		6F50DCBF1E87A5C800FEAAD6 /* Lostdamage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lostdamage.h; sourceTree = "<group>"; };
+		6F50DCC01E87A5C800FEAAD6 /* Lostdamage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lostdamage.m; sourceTree = "<group>"; };
+		6F594C9E1E84EF03005F9B24 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		6F594CA21E84F1C9005F9B24 /* UIImageView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Size.h"; sourceTree = "<group>"; };
+		6F594CA31E84F1C9005F9B24 /* UIImageView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Size.m"; sourceTree = "<group>"; };
+		6F594CA51E84F2C3005F9B24 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
+		6F594CA61E84F2C3005F9B24 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
 		6F7051231E80F52600272550 /* AssessDamage2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssessDamage2.xcdatamodel; sourceTree = "<group>"; };
 		6F7051241E80F66D00272550 /* User+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
 		6F7051251E80F66D00272550 /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
@@ -43,6 +69,14 @@
 		6F70512D1E80F87600272550 /* Cache+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Cache+CoreDataProperties.m"; sourceTree = "<group>"; };
 		6F7051301E80F8E600272550 /* CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreData.h; sourceTree = "<group>"; };
 		6F7051311E80F8E600272550 /* CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreData.m; sourceTree = "<group>"; };
+		6FA012081E8734090003E649 /* NSTimer+PauseTimerEMDT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+PauseTimerEMDT.h"; sourceTree = "<group>"; };
+		6FA012091E8734090003E649 /* NSTimer+PauseTimerEMDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+PauseTimerEMDT.m"; sourceTree = "<group>"; };
+		6FA0120C1E87381F0003E649 /* SignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignViewController.h; sourceTree = "<group>"; };
+		6FA0120D1E87381F0003E649 /* SignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignViewController.m; sourceTree = "<group>"; };
+		6FA0120F1E873D470003E649 /* ForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetViewController.h; sourceTree = "<group>"; };
+		6FA012101E873D470003E649 /* ForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetViewController.m; sourceTree = "<group>"; };
+		6FA012111E873D470003E649 /* ModifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyViewController.h; sourceTree = "<group>"; };
+		6FA012121E873D470003E649 /* ModifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyViewController.m; sourceTree = "<group>"; };
 		6FFF758E1E7FDF7F00C72937 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6FFF75D41E80D52A00C72937 /* AssessDamage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssessDamage.xcdatamodel; sourceTree = "<group>"; };
 		750C155D781C3EFECB2ABF55 /* Pods-AssessDamage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssessDamage.release.xcconfig"; path = "Pods/Target Support Files/Pods-AssessDamage/Pods-AssessDamage.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +120,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F50DCBE1E87A5C800FEAAD6 /* Lostdamage */ = {
+			isa = PBXGroup;
+			children = (
+				6F50DCBF1E87A5C800FEAAD6 /* Lostdamage.h */,
+				6F50DCC01E87A5C800FEAAD6 /* Lostdamage.m */,
+			);
+			path = Lostdamage;
+			sourceTree = "<group>";
+		};
+		6FA0120B1E87381F0003E649 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				6FA0120F1E873D470003E649 /* ForgetViewController.h */,
+				6FA012101E873D470003E649 /* ForgetViewController.m */,
+				6FA012111E873D470003E649 /* ModifyViewController.h */,
+				6FA012121E873D470003E649 /* ModifyViewController.m */,
+				6FA0120C1E87381F0003E649 /* SignViewController.h */,
+				6FA0120D1E87381F0003E649 /* SignViewController.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		6FFF758D1E7FDF7F00C72937 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +209,7 @@
 		DAB0F20D1E7E0AB000120478 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				6F50DCBE1E87A5C800FEAAD6 /* Lostdamage */,
 				DAB0F20E1E7E0AB000120478 /* Controller */,
 				DAB0F20F1E7E0AB000120478 /* Model */,
 				DAB0F2101E7E0AB000120478 /* View */,
@@ -209,8 +266,18 @@
 		DAB0F2171E7E0AB000120478 /* Extend */ = {
 			isa = PBXGroup;
 			children = (
+				6FA012081E8734090003E649 /* NSTimer+PauseTimerEMDT.h */,
+				6FA012091E8734090003E649 /* NSTimer+PauseTimerEMDT.m */,
 				DAB0F24D1E7E185D00120478 /* NSObject+Property.h */,
 				DAB0F24E1E7E185D00120478 /* NSObject+Property.m */,
+				6F07B15A1E812CDE00D7E221 /* NSString+Category.h */,
+				6F07B15B1E812CDE00D7E221 /* NSString+Category.m */,
+				6F07B1601E812EE600D7E221 /* UIView+Category.h */,
+				6F07B1611E812EE600D7E221 /* UIView+Category.m */,
+				6F594CA21E84F1C9005F9B24 /* UIImageView+Size.h */,
+				6F594CA31E84F1C9005F9B24 /* UIImageView+Size.m */,
+				6F594CA51E84F2C3005F9B24 /* UILabel+Category.h */,
+				6F594CA61E84F2C3005F9B24 /* UILabel+Category.m */,
 			);
 			path = Extend;
 			sourceTree = "<group>";
@@ -218,8 +285,11 @@
 		DAB0F2271E7E0CE300120478 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				6FA0120B1E87381F0003E649 /* User */,
 				DAB0F2281E7E0CE300120478 /* ViewController.h */,
 				DAB0F2291E7E0CE300120478 /* ViewController.m */,
+				6F50DCB81E8741F700FEAAD6 /* UIViewController+View.h */,
+				6F50DCB91E8741F700FEAAD6 /* UIViewController+View.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -238,6 +308,9 @@
 			children = (
 				DAB0F2531E7E1D1D00120478 /* Tool.h */,
 				DAB0F2541E7E1D1D00120478 /* Tool.m */,
+				6F07B15D1E812EB300D7E221 /* Factory.h */,
+				6F07B15E1E812EB300D7E221 /* Factory.m */,
+				6F594C9E1E84EF03005F9B24 /* Define.h */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -375,21 +448,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA012141E873D470003E649 /* ModifyViewController.m in Sources */,
+				6F07B15F1E812EB300D7E221 /* Factory.m in Sources */,
+				6F50DCC11E87A5C800FEAAD6 /* Lostdamage.m in Sources */,
 				DAB0F22A1E7E0CE300120478 /* ViewController.m in Sources */,
+				6F50DCBA1E8741F700FEAAD6 /* UIViewController+View.m in Sources */,
 				DAB0F24F1E7E185D00120478 /* NSObject+Property.m in Sources */,
+				6FA0120E1E87381F0003E649 /* SignViewController.m in Sources */,
 				6FFF75D51E80D52A00C72937 /* AssessDamage.xcdatamodeld in Sources */,
 				6F7051281E80F66D00272550 /* User+CoreDataClass.m in Sources */,
 				DAB0F2201E7E0B1000120478 /* BaseM.m in Sources */,
 				DAB0F2181E7E0AB000120478 /* AppDelegate.m in Sources */,
 				6F70512F1E80F87600272550 /* Cache+CoreDataProperties.m in Sources */,
+				6F594CA71E84F2C3005F9B24 /* UILabel+Category.m in Sources */,
+				6FA012131E873D470003E649 /* ForgetViewController.m in Sources */,
 				6F7051291E80F66D00272550 /* User+CoreDataProperties.m in Sources */,
 				6F7051321E80F8E600272550 /* CoreData.m in Sources */,
+				6F07B1621E812EE600D7E221 /* UIView+Category.m in Sources */,
 				DAB0F2261E7E0B4000120478 /* BaseC.m in Sources */,
 				DAB0F2231E7E0B2700120478 /* BaseV.m in Sources */,
 				6F70512E1E80F87600272550 /* Cache+CoreDataClass.m in Sources */,
 				DAB0F2551E7E1D1D00120478 /* Tool.m in Sources */,
 				DAB0F24B1E7E16BC00120478 /* MyUser.m in Sources */,
+				6F594CA41E84F1C9005F9B24 /* UIImageView+Size.m in Sources */,
 				DAB0F1DE1E7E07F500120478 /* main.m in Sources */,
+				6FA0120A1E8734090003E649 /* NSTimer+PauseTimerEMDT.m in Sources */,
+				6F07B15C1E812CDE00D7E221 /* NSString+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

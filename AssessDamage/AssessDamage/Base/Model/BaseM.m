@@ -117,6 +117,7 @@
         }
     }else{
         //其它类型的string
+        NSLog(@"注意此时的数据结果可能有问题，导致数据异常");
         return reqDic;
     } 
     return nil;

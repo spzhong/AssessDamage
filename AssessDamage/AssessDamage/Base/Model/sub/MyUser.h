@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseM.h"
+#import "User+CoreDataClass.h"
 
 #define CurrUser [MyUser currUser]
 
@@ -18,8 +19,7 @@
 @property(nonatomic,retain)NSString *pId;
 @property(nonatomic,retain)NSString *key;
 
-
 //获取当前的用户
-+(MyUser *)currUser;
++(User *)currUser;
 
 @end
