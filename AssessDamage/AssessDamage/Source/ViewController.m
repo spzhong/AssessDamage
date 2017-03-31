@@ -106,11 +106,13 @@
     NSMutableArray *carDiscountArray = [NSMutableArray arrayWithCapacity:0];
     NSMutableDictionary *oneItem1 = [NSMutableDictionary dictionaryWithCapacity:0];
     [oneItem1 setObject:@"0.5" forKey:@"coefficient"];//对应的系数
-    [oneItem1 setObject:@"1" forKey:@"partsId"];//对应的共项-对应的共享id
+    [oneItem1 setObject:@"1" forKey:@"partsId"];//对应的配件
+    [oneItem1 setObject:@"1" forKey:@"workItem"];//对应的工项
     [carDiscountArray addObject:oneItem1];
     NSMutableDictionary *oneItem2 = [NSMutableDictionary dictionaryWithCapacity:0];
     [oneItem2 setObject:@"0.6" forKey:@"coefficient"];//对应的系数
     [oneItem2 setObject:@"2" forKey:@"partsId"];//对应的工项-对应的工项id
+    [oneItem1 setObject:@"1" forKey:@"workItem"];//对应的工项
     [carDiscountArray addObject:oneItem2];
     [dicDiscount1 setObject:carDiscountArray forKey:@"carDiscountArray"];
     

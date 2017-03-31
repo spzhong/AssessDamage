@@ -153,7 +153,7 @@
             if ([dic[@"carId"] isEqualToString:self.carInfo.carId]) {
                 NSMutableArray *carDiscountArray = dic[@"carDiscountArray"];
                 for (NSMutableDictionary *dicOne in carDiscountArray) {
-                    if ([dicOne[@"partsId"] isEqualToString:oneItem.partsId]) {
+                    if ([dicOne[@"partsId"] isEqualToString:oneItem.partsId] &&  [dicOne[@"workItem"] intValue] ==oneItem.itemType) {
                         return [dicOne[@"coefficient"] doubleValue] * brandCoefficient;
                     }
                 }
