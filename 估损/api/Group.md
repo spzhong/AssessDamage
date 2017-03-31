@@ -600,9 +600,10 @@ code=1
 
 ```
 {
-	 "userToken":"用户token",
-	 "lostdamageId":"估损单id",
-	 "sixCode":"估损单对应的当前的六位码",
+	"encryption_token":"加密后的验证信息",
+ 	"userId":"用户的id",
+	"lostdamageId":"估损单id",
+	"sixCode":"估损单对应的当前的六位码",
 }
 ```
 
@@ -625,9 +626,9 @@ code=1
 - Request  (application/json)
 
 ```
-{
-     "server_token":"约束好的32位token，用于验证服务的身份",
-	 "userToken":"用户token",
+	{
+     "encryption_token":"加密后的验证信息",
+	 "userId":"用户的id",
 	 "lostdamageId":"估损单id",
 	 "sixCode":"估损单对应的当前的六位码",
 	 "overview":{//概要信息
@@ -671,8 +672,8 @@ code=1
 
 ```
 {
-     "server_token":"约束好的32位token，用于验证服务的身份",
-	 "userToken":"用户token",
+     "encryption_token":"加密后的验证信息",
+	 "userId":"用户的id",
 	 "lostdamageId":"估损单id",
 	 "newSixCode":"估损单对应的当前的六位码",
 	 "oldSixCode":"老的六位码",
@@ -693,13 +694,14 @@ code=1
 
 ## AppServer向SDKServer提供配置工时等数据  [/{{cityId}/config/data]
 
-### 提供可查询的工时接口 [POST]
+### 提供可查询的工时及相关数据接口 [POST]
 
 - Request  (application/json)
 
 ```
 {
-	"server_token":"约束好的32位token，用于验证服务的身份"
+	"encryption_token":"加密后的验证信息",
+	"enterpriseId":"企业id(用于区分不同企业的工时算法，目前默认说的太保深圳分公司)，可以为空（查询所有的企业数据）"
 }
 ```
 
@@ -709,9 +711,10 @@ code=1
 {
 	"code": "1",
 	"msg":"回调信息",
-	"data":{
-      
-	}
+	"data":[
+      	"enterpriseId":"企业分公司的id",
+      	"enterpriseName":"企业分公司的名称",
+	]
 }
 ```
 
@@ -731,7 +734,7 @@ code=1
 
 ```
 {
-	"server_token":"约束好的32位token，用于验证服务的身份",
+	"encryption_token":"加密后的验证信息",
 	"lastLostdamageId":"最后一条的估损单的id",
 }
 ```
@@ -749,6 +752,8 @@ code=1
 	]
 }
 ```
+
+
 ```
 {
 	"code": "100",
@@ -767,7 +772,7 @@ code=1
 
 ```
 {
-	"server_token":"约束好的32位token，用于验证服务的身份",
+	"encryption_token":"加密后的验证信息",
 	"lostdamageId":"估损单的id",
 	"sixCode":"六位码",
 }
@@ -812,7 +817,7 @@ code=1
 
 ```
 {
-	"server_token":"约束好的32位token，用于验证服务的身份",
+	"encryption_token":"加密后的验证信息",
 	"lostdamageId":"估损单的id",
 	"sixCode":"六位码",
 }
@@ -855,7 +860,7 @@ code=1
 
 ```
 {
-	"server_token":"约束好的32位token，用于验证服务的身份",
+	"encryption_token":"加密后的验证信息",
 	"lostdamageId":"估损单的id"
 }
 ```
@@ -890,11 +895,12 @@ code=1
 ```
 ```
 /*
-userToken:用户token
+userId:用户ID
 userType:用户类型（0是默认的保险估损人员，1是修来厂或4s店的修理员工）
+enterpriseId:企业id(用于区分不同企业的工时算法，目前默认说的太保深圳分公司)
 appDelagete:用来接收sdk内部的回调
 */
-+(void)configUser:(NSString *)userToken withUserType:(int)userType withDelegate:(id<SDKCallBackDelegate>)appDelagete;	
++(void)configUser:(NSString *)userId withUserType:(int)userType withEnterprise:(NSString *)enterpriseId withDelegate:(id<SDKCallBackDelegate>)appDelagete;	
 ```
 
 
@@ -940,14 +946,14 @@ sixCode:六位码
 
 ```
 方法说明：直接调用sdk内部的分享的页面
+分享会产生新的六位码；成功后需要回调到App端;
+注意：六位码变更后需要sdk_server通知app_server同步更新
 ```
 ```
 /*
-sixCode:六位码分享
+oldSixCode:六位码分享
 lostdamageId:估损单的id
 */ 
-+(void)shareLostdamage:(NSString *)sixCode with:(NSString *)lostdamageId withBlock:(void (^)(BOOL success))block;	
++(void)shareLostdamage:(NSString *)oldSixCode with:(NSString *)lostdamageId withBlock:(void (^)(BOOL success,NSString *newSixCode))block;	
 ```
 
-
-# Group SDK->App

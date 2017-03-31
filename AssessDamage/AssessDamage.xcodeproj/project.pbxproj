@@ -10,6 +10,15 @@
 		6F07B15C1E812CDE00D7E221 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F07B15B1E812CDE00D7E221 /* NSString+Category.m */; };
 		6F07B15F1E812EB300D7E221 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F07B15E1E812EB300D7E221 /* Factory.m */; };
 		6F07B1621E812EE600D7E221 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F07B1611E812EE600D7E221 /* UIView+Category.m */; };
+		6F4F95091E8CEDC80053F9EB /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F95081E8CEDC80053F9EB /* Car.m */; };
+		6F4F950C1E8CEDDF0053F9EB /* LostItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F950B1E8CEDDF0053F9EB /* LostItem.m */; };
+		6F4F950F1E8CEDFE0053F9EB /* RepairFactory4S.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F950E1E8CEDFE0053F9EB /* RepairFactory4S.m */; };
+		6F4F95121E8CEE1B0053F9EB /* ManagementBrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F95111E8CEE1B0053F9EB /* ManagementBrand.m */; };
+		6F4F95151E8D11B60053F9EB /* ConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F95141E8D11B60053F9EB /* ConfigData.m */; };
+		6F4F95191E8D17F90053F9EB /* StandardWorkHours.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F4F95181E8D17F90053F9EB /* StandardWorkHours.plist */; };
+		6F4F951B1E8D28970053F9EB /* NoBrand.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F4F951A1E8D28970053F9EB /* NoBrand.plist */; };
+		6F4F95261E8E28C70053F9EB /* ErrorLog+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F95231E8E28C70053F9EB /* ErrorLog+CoreDataClass.m */; };
+		6F4F95271E8E28C70053F9EB /* ErrorLog+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F95251E8E28C70053F9EB /* ErrorLog+CoreDataProperties.m */; };
 		6F50DCBA1E8741F700FEAAD6 /* UIViewController+View.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F50DCB91E8741F700FEAAD6 /* UIViewController+View.m */; };
 		6F50DCC11E87A5C800FEAAD6 /* Lostdamage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F50DCC01E87A5C800FEAAD6 /* Lostdamage.m */; };
 		6F594CA41E84F1C9005F9B24 /* UIImageView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F594CA31E84F1C9005F9B24 /* UIImageView+Size.m */; };
@@ -49,6 +58,22 @@
 		6F07B15E1E812EB300D7E221 /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
 		6F07B1601E812EE600D7E221 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
 		6F07B1611E812EE600D7E221 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		6F4F95071E8CEDC80053F9EB /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		6F4F95081E8CEDC80053F9EB /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		6F4F950A1E8CEDDF0053F9EB /* LostItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostItem.h; sourceTree = "<group>"; };
+		6F4F950B1E8CEDDF0053F9EB /* LostItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostItem.m; sourceTree = "<group>"; };
+		6F4F950D1E8CEDFE0053F9EB /* RepairFactory4S.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepairFactory4S.h; sourceTree = "<group>"; };
+		6F4F950E1E8CEDFE0053F9EB /* RepairFactory4S.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepairFactory4S.m; sourceTree = "<group>"; };
+		6F4F95101E8CEE1B0053F9EB /* ManagementBrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagementBrand.h; sourceTree = "<group>"; };
+		6F4F95111E8CEE1B0053F9EB /* ManagementBrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagementBrand.m; sourceTree = "<group>"; };
+		6F4F95131E8D11B60053F9EB /* ConfigData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigData.h; sourceTree = "<group>"; };
+		6F4F95141E8D11B60053F9EB /* ConfigData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigData.m; sourceTree = "<group>"; };
+		6F4F95181E8D17F90053F9EB /* StandardWorkHours.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StandardWorkHours.plist; sourceTree = "<group>"; };
+		6F4F951A1E8D28970053F9EB /* NoBrand.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NoBrand.plist; sourceTree = "<group>"; };
+		6F4F95221E8E28C70053F9EB /* ErrorLog+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ErrorLog+CoreDataClass.h"; sourceTree = "<group>"; };
+		6F4F95231E8E28C70053F9EB /* ErrorLog+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ErrorLog+CoreDataClass.m"; sourceTree = "<group>"; };
+		6F4F95241E8E28C70053F9EB /* ErrorLog+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ErrorLog+CoreDataProperties.h"; sourceTree = "<group>"; };
+		6F4F95251E8E28C70053F9EB /* ErrorLog+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ErrorLog+CoreDataProperties.m"; sourceTree = "<group>"; };
 		6F50DCB81E8741F700FEAAD6 /* UIViewController+View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+View.h"; sourceTree = "<group>"; };
 		6F50DCB91E8741F700FEAAD6 /* UIViewController+View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+View.m"; sourceTree = "<group>"; };
 		6F50DCBF1E87A5C800FEAAD6 /* Lostdamage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lostdamage.h; sourceTree = "<group>"; };
@@ -120,11 +145,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F4F95061E8CEDBD0053F9EB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6F4F95071E8CEDC80053F9EB /* Car.h */,
+				6F4F95081E8CEDC80053F9EB /* Car.m */,
+				6F4F950A1E8CEDDF0053F9EB /* LostItem.h */,
+				6F4F950B1E8CEDDF0053F9EB /* LostItem.m */,
+				6F4F950D1E8CEDFE0053F9EB /* RepairFactory4S.h */,
+				6F4F950E1E8CEDFE0053F9EB /* RepairFactory4S.m */,
+				6F4F95101E8CEE1B0053F9EB /* ManagementBrand.h */,
+				6F4F95111E8CEE1B0053F9EB /* ManagementBrand.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		6F50DCBE1E87A5C800FEAAD6 /* Lostdamage */ = {
 			isa = PBXGroup;
 			children = (
+				6F4F95061E8CEDBD0053F9EB /* model */,
 				6F50DCBF1E87A5C800FEAAD6 /* Lostdamage.h */,
 				6F50DCC01E87A5C800FEAAD6 /* Lostdamage.m */,
+				6F4F95131E8D11B60053F9EB /* ConfigData.h */,
+				6F4F95141E8D11B60053F9EB /* ConfigData.m */,
+				6F4F95181E8D17F90053F9EB /* StandardWorkHours.plist */,
+				6F4F951A1E8D28970053F9EB /* NoBrand.plist */,
 			);
 			path = Lostdamage;
 			sourceTree = "<group>";
@@ -251,6 +296,10 @@
 			children = (
 				6F7051301E80F8E600272550 /* CoreData.h */,
 				6F7051311E80F8E600272550 /* CoreData.m */,
+				6F4F95221E8E28C70053F9EB /* ErrorLog+CoreDataClass.h */,
+				6F4F95231E8E28C70053F9EB /* ErrorLog+CoreDataClass.m */,
+				6F4F95241E8E28C70053F9EB /* ErrorLog+CoreDataProperties.h */,
+				6F4F95251E8E28C70053F9EB /* ErrorLog+CoreDataProperties.m */,
 				6F70512A1E80F87600272550 /* Cache+CoreDataClass.h */,
 				6F70512B1E80F87600272550 /* Cache+CoreDataClass.m */,
 				6F70512C1E80F87600272550 /* Cache+CoreDataProperties.h */,
@@ -389,6 +438,8 @@
 				DAB0F2511E7E1A1600120478 /* Config.plist in Resources */,
 				DAB0F1EF1E7E07F500120478 /* LaunchScreen.storyboard in Resources */,
 				DAB0F1EC1E7E07F500120478 /* Assets.xcassets in Resources */,
+				6F4F951B1E8D28970053F9EB /* NoBrand.plist in Resources */,
+				6F4F95191E8D17F90053F9EB /* StandardWorkHours.plist in Resources */,
 				DAB0F1E71E7E07F500120478 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +501,9 @@
 			files = (
 				6FA012141E873D470003E649 /* ModifyViewController.m in Sources */,
 				6F07B15F1E812EB300D7E221 /* Factory.m in Sources */,
+				6F4F95121E8CEE1B0053F9EB /* ManagementBrand.m in Sources */,
+				6F4F95261E8E28C70053F9EB /* ErrorLog+CoreDataClass.m in Sources */,
+				6F4F95271E8E28C70053F9EB /* ErrorLog+CoreDataProperties.m in Sources */,
 				6F50DCC11E87A5C800FEAAD6 /* Lostdamage.m in Sources */,
 				DAB0F22A1E7E0CE300120478 /* ViewController.m in Sources */,
 				6F50DCBA1E8741F700FEAAD6 /* UIViewController+View.m in Sources */,
@@ -464,14 +518,18 @@
 				6FA012131E873D470003E649 /* ForgetViewController.m in Sources */,
 				6F7051291E80F66D00272550 /* User+CoreDataProperties.m in Sources */,
 				6F7051321E80F8E600272550 /* CoreData.m in Sources */,
+				6F4F950F1E8CEDFE0053F9EB /* RepairFactory4S.m in Sources */,
 				6F07B1621E812EE600D7E221 /* UIView+Category.m in Sources */,
 				DAB0F2261E7E0B4000120478 /* BaseC.m in Sources */,
+				6F4F95091E8CEDC80053F9EB /* Car.m in Sources */,
 				DAB0F2231E7E0B2700120478 /* BaseV.m in Sources */,
 				6F70512E1E80F87600272550 /* Cache+CoreDataClass.m in Sources */,
 				DAB0F2551E7E1D1D00120478 /* Tool.m in Sources */,
+				6F4F950C1E8CEDDF0053F9EB /* LostItem.m in Sources */,
 				DAB0F24B1E7E16BC00120478 /* MyUser.m in Sources */,
 				6F594CA41E84F1C9005F9B24 /* UIImageView+Size.m in Sources */,
 				DAB0F1DE1E7E07F500120478 /* main.m in Sources */,
+				6F4F95151E8D11B60053F9EB /* ConfigData.m in Sources */,
 				6FA0120A1E8734090003E649 /* NSTimer+PauseTimerEMDT.m in Sources */,
 				6F07B15C1E812CDE00D7E221 /* NSString+Category.m in Sources */,
 			);

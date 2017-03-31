@@ -17,6 +17,22 @@
     return array;
 }
 
+
++(NSArray *)readStandardWorkHours{
+    
+    NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"StandardWorkHours" ofType:@"plist"]];
+    
+    return array;
+}
+
+
++(NSArray *)readNoBrand{
+    NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"NoBrand" ofType:@"plist"]];
+    
+    return array;
+
+}
+
 +(NSDictionary*)readConfigWithKey:(NSString *)key{
     NSArray *array = [Tool readConfig];
     for (NSMutableDictionary *dic in array) {

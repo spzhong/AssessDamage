@@ -11,6 +11,7 @@
 #import "NSObject+Property.h"
 #import "XMNetworking.h"
 #import "Cache+CoreDataClass.h"
+#import "ErrorLog+CoreDataClass.h"
 
 
 @implementation BaseM
@@ -64,9 +65,9 @@
         request.parameters = dic;
     } callBackBlock:^(BOOL success, id responseObject, NSError *error) {
         
+        
         success = YES;
         responseObject = [NSArray arrayWithObjects:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"123",@"pId",@"位置",@"key", nil], nil];
-         
         //成功
         if (success) {
             id req = responseObject;
@@ -84,6 +85,16 @@
             back(false,object);
         }else{
             back(false,nil);
+            //进行将错误的信息记录
+            NSEntityDescription *entity = [NSEntityDescription entityForName:@"ErrorLog" inManagedObjectContext:[CoreData getDele].managedObjectContext];
+            ErrorLog *errorLog = (ErrorLog *)[[NSManagedObject alloc]initWithEntity:entity insertIntoManagedObjectContext:[CoreData getDele].managedObjectContext];
+            errorLog.userId = CurrUser.userId;
+            errorLog.time = [NSDate date];
+            errorLog.url = url;
+            errorLog.postDicString = [Tool dictionaryToJson:dic];
+            errorLog.errorLog = [Tool dictionaryToJson:responseObject];;
+            [CoreData save_coredata];
+            //进行将错误的信息记录
         }
         
     }];
