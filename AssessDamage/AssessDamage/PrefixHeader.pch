@@ -25,4 +25,6 @@
 #import <ReactiveCocoa.h>
 #import "MyUser.h"
 #import "User+CoreDataClass.h"
+#import "Factory.h"
+#import "UILabel+Category.h"
 #endif /* PrefixHeader_pch */

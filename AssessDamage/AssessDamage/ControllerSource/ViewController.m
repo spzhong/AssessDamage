@@ -35,9 +35,6 @@
         SlideView *sli = [AppWindow viewWithTag:1988];
         [sli leftViewShow:YES];
     }];
-    [self rewriteRightNav_title:@"通知" withBlock:^{
-        
-    }];
     
     [self lostdamage];
 }

@@ -10,4 +10,15 @@
 
 @implementation Factory
 
++(UILabel *)lab:(NSString *)text with:(float)font withFrame:(CGRect)frame with:(UIColor *)color{
+    UILabel *lab = [[UILabel alloc] initWithFrame:frame];
+    [lab setBackgroundColor:[UIColor clearColor]];
+    lab.text = text;
+    lab.textColor = color;
+    lab.font = Font(font);
+    lab.shadowColor = [UIColor grayColor];
+    //阴影大小
+    lab.shadowOffset = CGSizeMake(.2, .2);
+    return lab;
+}
 @end

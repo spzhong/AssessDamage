@@ -36,6 +36,13 @@
 		6FDEA5021E948BD0001C2525 /* ModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA4FB1E948BD0001C2525 /* ModifyViewController.m */; };
 		6FDEA5031E948BD0001C2525 /* SignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA4FD1E948BD0001C2525 /* SignViewController.m */; };
 		6FDEA5041E948BD0001C2525 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA4FF1E948BD0001C2525 /* ViewController.m */; };
+		6FDEA50D1E949ECC001C2525 /* AppDelegate+JPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA50C1E949ECC001C2525 /* AppDelegate+JPush.m */; };
+		6FDEA5131E94A953001C2525 /* libsms-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDEA5121E94A953001C2525 /* libsms-lib.a */; };
+		6FDEA5171E94CC4B001C2525 /* MyUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA5161E94CC4B001C2525 /* MyUserController.m */; };
+		6FDEA51C1E94CCF3001C2525 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA51B1E94CCF3001C2525 /* AboutController.m */; };
+		6FDEA51F1E94CCFF001C2525 /* SetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA51E1E94CCFF001C2525 /* SetController.m */; };
+		6FDEA5241E94CFB1001C2525 /* MessageCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA5231E94CFB1001C2525 /* MessageCenterController.m */; };
+		6FDEA5271E94D01D001C2525 /* HistoryDamageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA5261E94D01D001C2525 /* HistoryDamageController.m */; };
 		6FFF758F1E7FDF7F00C72937 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFF758E1E7FDF7F00C72937 /* CoreData.framework */; };
 		6FFF75D51E80D52A00C72937 /* AssessDamage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF75D31E80D52A00C72937 /* AssessDamage.xcdatamodeld */; };
 		DAB0F1DE1E7E07F500120478 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0F1DD1E7E07F500120478 /* main.m */; };
@@ -113,6 +120,22 @@
 		6FDEA4FD1E948BD0001C2525 /* SignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignViewController.m; sourceTree = "<group>"; };
 		6FDEA4FE1E948BD0001C2525 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6FDEA4FF1E948BD0001C2525 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6FDEA50B1E949ECC001C2525 /* AppDelegate+JPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JPush.h"; sourceTree = "<group>"; };
+		6FDEA50C1E949ECC001C2525 /* AppDelegate+JPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JPush.m"; sourceTree = "<group>"; };
+		6FDEA5101E94A953001C2525 /* JSMSConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMSConstant.h; sourceTree = "<group>"; };
+		6FDEA5111E94A953001C2525 /* JSMSSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMSSDK.h; sourceTree = "<group>"; };
+		6FDEA5121E94A953001C2525 /* libsms-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsms-lib.a"; sourceTree = "<group>"; };
+		6FDEA5141E94A985001C2525 /* AssessDamage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AssessDamage.entitlements; sourceTree = "<group>"; };
+		6FDEA5151E94CC4B001C2525 /* MyUserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUserController.h; sourceTree = "<group>"; };
+		6FDEA5161E94CC4B001C2525 /* MyUserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUserController.m; sourceTree = "<group>"; };
+		6FDEA51A1E94CCF3001C2525 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		6FDEA51B1E94CCF3001C2525 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		6FDEA51D1E94CCFF001C2525 /* SetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetController.h; sourceTree = "<group>"; };
+		6FDEA51E1E94CCFF001C2525 /* SetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetController.m; sourceTree = "<group>"; };
+		6FDEA5221E94CFB1001C2525 /* MessageCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCenterController.h; sourceTree = "<group>"; };
+		6FDEA5231E94CFB1001C2525 /* MessageCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCenterController.m; sourceTree = "<group>"; };
+		6FDEA5251E94D01D001C2525 /* HistoryDamageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDamageController.h; sourceTree = "<group>"; };
+		6FDEA5261E94D01D001C2525 /* HistoryDamageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDamageController.m; sourceTree = "<group>"; };
 		6FFF758E1E7FDF7F00C72937 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6FFF75D41E80D52A00C72937 /* AssessDamage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssessDamage.xcdatamodel; sourceTree = "<group>"; };
 		750C155D781C3EFECB2ABF55 /* Pods-AssessDamage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssessDamage.release.xcconfig"; path = "Pods/Target Support Files/Pods-AssessDamage/Pods-AssessDamage.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FDEA5131E94A953001C2525 /* libsms-lib.a in Frameworks */,
 				6FFF758F1E7FDF7F00C72937 /* CoreData.framework in Frameworks */,
 				F48854C59308925ECC0D8788 /* libPods-AssessDamage.a in Frameworks */,
 			);
@@ -186,6 +210,7 @@
 		6FDEA4E91E94863E001C2525 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				6FDEA50E1E94A953001C2525 /* JsmsSDK */,
 				6FDEA4EA1E94863E001C2525 /* SlideView */,
 			);
 			path = lib;
@@ -205,6 +230,10 @@
 		6FDEA4F41E948BD0001C2525 /* ControllerSource */ = {
 			isa = PBXGroup;
 			children = (
+				6FDEA5201E94CF9D001C2525 /* AssessDamage */,
+				6FDEA5211E94CF9D001C2525 /* MessageCenter */,
+				6FDEA5181E94CCDA001C2525 /* About */,
+				6FDEA5191E94CCDA001C2525 /* Set */,
 				6FDEA4FE1E948BD0001C2525 /* ViewController.h */,
 				6FDEA4FF1E948BD0001C2525 /* ViewController.m */,
 				6FDEA4F51E948BD0001C2525 /* UIViewController+View.h */,
@@ -223,8 +252,64 @@
 				6FDEA4FB1E948BD0001C2525 /* ModifyViewController.m */,
 				6FDEA4FC1E948BD0001C2525 /* SignViewController.h */,
 				6FDEA4FD1E948BD0001C2525 /* SignViewController.m */,
+				6FDEA5151E94CC4B001C2525 /* MyUserController.h */,
+				6FDEA5161E94CC4B001C2525 /* MyUserController.m */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		6FDEA50E1E94A953001C2525 /* JsmsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6FDEA50F1E94A953001C2525 /* include */,
+				6FDEA5121E94A953001C2525 /* libsms-lib.a */,
+			);
+			path = JsmsSDK;
+			sourceTree = "<group>";
+		};
+		6FDEA50F1E94A953001C2525 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6FDEA5101E94A953001C2525 /* JSMSConstant.h */,
+				6FDEA5111E94A953001C2525 /* JSMSSDK.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		6FDEA5181E94CCDA001C2525 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				6FDEA51A1E94CCF3001C2525 /* AboutController.h */,
+				6FDEA51B1E94CCF3001C2525 /* AboutController.m */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		6FDEA5191E94CCDA001C2525 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				6FDEA51D1E94CCFF001C2525 /* SetController.h */,
+				6FDEA51E1E94CCFF001C2525 /* SetController.m */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		6FDEA5201E94CF9D001C2525 /* AssessDamage */ = {
+			isa = PBXGroup;
+			children = (
+				6FDEA5251E94D01D001C2525 /* HistoryDamageController.h */,
+				6FDEA5261E94D01D001C2525 /* HistoryDamageController.m */,
+			);
+			path = AssessDamage;
+			sourceTree = "<group>";
+		};
+		6FDEA5211E94CF9D001C2525 /* MessageCenter */ = {
+			isa = PBXGroup;
+			children = (
+				6FDEA5221E94CFB1001C2525 /* MessageCenterController.h */,
+				6FDEA5231E94CFB1001C2525 /* MessageCenterController.m */,
+			);
+			path = MessageCenter;
 			sourceTree = "<group>";
 		};
 		6FFF758D1E7FDF7F00C72937 /* Frameworks */ = {
@@ -257,6 +342,7 @@
 		DAB0F1DB1E7E07F500120478 /* AssessDamage */ = {
 			isa = PBXGroup;
 			children = (
+				6FDEA5141E94A985001C2525 /* AssessDamage.entitlements */,
 				6FDEA4F41E948BD0001C2525 /* ControllerSource */,
 				6FDEA4E91E94863E001C2525 /* lib */,
 				DAB0F2521E7E1D0D00120478 /* Tool */,
@@ -288,6 +374,8 @@
 			children = (
 				DAB0F20B1E7E0AB000120478 /* AppDelegate.h */,
 				DAB0F20C1E7E0AB000120478 /* AppDelegate.m */,
+				6FDEA50B1E949ECC001C2525 /* AppDelegate+JPush.h */,
+				6FDEA50C1E949ECC001C2525 /* AppDelegate+JPush.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -440,6 +528,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = WC7LZN7T9K;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -532,13 +625,16 @@
 			files = (
 				6F07B15F1E812EB300D7E221 /* Factory.m in Sources */,
 				6FDEA5011E948BD0001C2525 /* ForgetViewController.m in Sources */,
+				6FDEA50D1E949ECC001C2525 /* AppDelegate+JPush.m in Sources */,
 				6F4F95121E8CEE1B0053F9EB /* ManagementBrand.m in Sources */,
 				6F4F95261E8E28C70053F9EB /* ErrorLog+CoreDataClass.m in Sources */,
 				6F4F95271E8E28C70053F9EB /* ErrorLog+CoreDataProperties.m in Sources */,
 				6F50DCC11E87A5C800FEAAD6 /* Lostdamage.m in Sources */,
 				DAB0F24F1E7E185D00120478 /* NSObject+Property.m in Sources */,
 				6FFF75D51E80D52A00C72937 /* AssessDamage.xcdatamodeld in Sources */,
+				6FDEA5241E94CFB1001C2525 /* MessageCenterController.m in Sources */,
 				6FDEA4F01E94863E001C2525 /* UIView+Ext.m in Sources */,
+				6FDEA51F1E94CCFF001C2525 /* SetController.m in Sources */,
 				6FDEA4F31E948991001C2525 /* Verification.m in Sources */,
 				6F7051281E80F66D00272550 /* User+CoreDataClass.m in Sources */,
 				DAB0F2201E7E0B1000120478 /* BaseM.m in Sources */,
@@ -563,8 +659,11 @@
 				6F594CA41E84F1C9005F9B24 /* UIImageView+Size.m in Sources */,
 				DAB0F1DE1E7E07F500120478 /* main.m in Sources */,
 				6FDEA5031E948BD0001C2525 /* SignViewController.m in Sources */,
+				6FDEA5171E94CC4B001C2525 /* MyUserController.m in Sources */,
 				6F4F95151E8D11B60053F9EB /* ConfigData.m in Sources */,
 				6FA0120A1E8734090003E649 /* NSTimer+PauseTimerEMDT.m in Sources */,
+				6FDEA5271E94D01D001C2525 /* HistoryDamageController.m in Sources */,
+				6FDEA51C1E94CCF3001C2525 /* AboutController.m in Sources */,
 				6F07B15C1E812CDE00D7E221 /* NSString+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,11 +785,16 @@
 			baseConfigurationReference = 431DCED361E5037F7C298A19 /* Pods-AssessDamage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AssessDamage/AssessDamage.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WC7LZN7T9K;
 				GCC_PREFIX_HEADER = AssessDamage/PrefixHeader.pch;
 				INFOPLIST_FILE = AssessDamage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AssessDamage/lib/JsmsSDK",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.AssessDamage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -702,11 +806,16 @@
 			baseConfigurationReference = 750C155D781C3EFECB2ABF55 /* Pods-AssessDamage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AssessDamage/AssessDamage.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WC7LZN7T9K;
 				GCC_PREFIX_HEADER = AssessDamage/PrefixHeader.pch;
 				INFOPLIST_FILE = AssessDamage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AssessDamage/lib/JsmsSDK",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.AssessDamage;
 				PRODUCT_NAME = "$(TARGET_NAME)";

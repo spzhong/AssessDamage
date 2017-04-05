@@ -10,4 +10,7 @@
 
 @interface UILabel (Category)
 
+-(void)addLineUp;
+-(void)addLineBom;
+
 @end

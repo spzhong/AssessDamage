@@ -3,6 +3,8 @@ inhibit_all_warnings!
 
 target 'AssessDamage' do
 pod 'DachenKit', :git => 'http://192.168.3.200/ios/DachenKit.git'
-
+pod 'JPush’
+ 
+ 
 
 end

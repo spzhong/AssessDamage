@@ -58,12 +58,17 @@
     self.layer.shadowOffset = CGSizeMake(1, 0);
     self.layer.shadowPath =[UIBezierPath bezierPathWithRect:self.bounds].CGPath;
     
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.sizeWidth, ScreenHeight) style:UITableViewStylePlain];
-    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.sizeWidth, ScreenHeight) style:UITableViewStyleGrouped];
+    self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
+    
+    self.tableView.scrollEnabled = NO;
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self addSubview:self.tableView];
+    
+    self.tableView.tableHeaderView = [self viewForHeaderInSection];
+    [self addSubview:[self viewForFooterInSection]];
 }
 
 
@@ -181,6 +186,45 @@
 }
 #pragma mark - UITableViewDelegate & UITableViewDataSource
 
+//用户
+-(void)headActiondo{
+    _leftBlock(-1);
+}
+//关于
+-(void)footActiondo{
+    _leftBlock(-2);
+}
+
+
+- (UIView *)viewForHeaderInSection{
+    UIView *bgHead = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.size.width, 80)];
+    UIImageView *head = [[UIImageView alloc] initWithFrame:CGRectMake(15, 15, 50, 50)];
+    [head setBackgroundColor:[UIColor redColor]];
+    [head setBorderOnViewBorderColor:nil borderWidth:0.0 cornerRadius:25];
+    [bgHead addSubview:head];
+    
+    UILabel *name = [Factory lab:CurrUser.name with:18 withFrame:CGRectMake(80, 0,self.size.width , 80) with:[UIColor blackColor]];
+    [bgHead addSubview:name];
+    
+    UITapGestureRecognizer*tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(headActiondo)];
+    [bgHead addGestureRecognizer:tapGesture];
+    
+    return bgHead;
+}
+- (UIView *)viewForFooterInSection{
+    UIView *bgfoot = [[UIView alloc] initWithFrame:CGRectMake(0, ScreenHeight-44, self.size.width, 44)];
+
+    UILabel *about = [Factory lab:@"关于" with:14 withFrame:CGRectMake(15, 0,self.size.width-15 , 44) with:[UIColor blackColor]];
+    [bgfoot addSubview:about];
+    [about addLineUp];
+    
+    
+    UITapGestureRecognizer*tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(footActiondo)];
+    [bgfoot addGestureRecognizer:tapGesture];
+ 
+    return bgfoot;
+}
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -194,7 +238,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return 3;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -202,7 +246,13 @@
     if (cell==nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"reuseIdentifier"];
     }
-    cell.textLabel.text = @"123";
+    if (indexPath.row==0) {
+        cell.textLabel.text = @"历史估损单";
+    }else if (indexPath.row==1) {
+        cell.textLabel.text = @"消息中心";
+    }else if (indexPath.row==2) {
+        cell.textLabel.text = @"设置";
+    }
     return cell;
 }
 

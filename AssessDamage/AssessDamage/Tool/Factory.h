@@ -10,7 +10,7 @@
 
 @interface Factory : NSObject
 
-
++(UILabel *)lab:(NSString *)text with:(float)font withFrame:(CGRect)frame with:(UIColor *)color;
 
 
 @end

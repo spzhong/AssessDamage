@@ -10,6 +10,8 @@
 #import "MyUser.h"
 #import "SignViewController.h"
 #import "MyUser.h"
+#import "AppDelegate+JPush.h"
+
 
 @interface AppDelegate ()
 
@@ -22,6 +24,8 @@
     // Override point for customization after application launch.
     
     
+    //配置及极光
+    [self configJPush];
     
     
     UINavigationBar *navigationBar =  [UINavigationBar appearance];

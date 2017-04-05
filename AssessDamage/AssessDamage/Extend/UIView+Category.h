@@ -20,12 +20,10 @@
 @property CGFloat right;
 
 
-- (void)setBorderOnView:(UIView *)view;
-- (void)setBorderOnView:(UIView *)view borderColor:(UIColor *)borderColor;
-- (void)setBorderOnView:(UIView *)view cornerRadius:(CGFloat)cornerRadius;
-- (void)setBorderOnView:(UIView *)view borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth cornerRadius:(CGFloat)cornerRadius;
-- (void)setLineOnView:(UIView *)view andSize:(CGSize)size;
-- (void)setLineOnBottomView:(UIView *)view andSize:(CGSize)size;
+- (void)setBorderOnView;
+- (void)setBorderOnViewBorderColor:(UIColor *)borderColor;
+- (void)setBorderOnViewCornerRadius:(CGFloat)cornerRadius;
+- (void)setBorderOnViewBorderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth cornerRadius:(CGFloat)cornerRadius;
 
  
 

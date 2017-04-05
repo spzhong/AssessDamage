@@ -10,6 +10,8 @@
 #import "NSTimer+PauseTimerEMDT.h"
 #import "ModifyViewController.h"
 #import "Verification.h"
+#import "JSMSSDK.h"
+
 
 @interface ForgetViewController ()
 {
@@ -221,7 +223,22 @@
 
 - (IBAction)getValidCodeClick:(id)sender {
     [self.view endEditing:YES];
- 
+    
+    
+    NSString *msg = [Verification phone:self.userTextField.text];
+    if (msg.length>0) {
+        
+        return;
+    }
+    //获取验证码
+    [JSMSSDK getVerificationCodeWithPhoneNumber:self.userTextField.text andTemplateID:@"1" completionHandler:^(id resultObject, NSError *error) {
+        if (!error) {
+            NSLog(@"获取验证码成功！");
+        }else{
+            NSLog(@"获取验证码失败！");
+        }
+    }];
+    
     
 //    NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:0];
 //    [dic setObject:self.userTextField.text forKey:@"telephone"];
