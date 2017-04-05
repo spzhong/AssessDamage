@@ -9,7 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (Category)
- 
+
+@property CGPoint origin;
+@property CGSize size;
+@property CGFloat height;
+@property CGFloat width;
+@property CGFloat top;
+@property CGFloat left;
+@property CGFloat bottom;
+@property CGFloat right;
+
+
 - (void)setBorderOnView:(UIView *)view;
 - (void)setBorderOnView:(UIView *)view borderColor:(UIColor *)borderColor;
 - (void)setBorderOnView:(UIView *)view cornerRadius:(CGFloat)cornerRadius;
@@ -17,10 +27,7 @@
 - (void)setLineOnView:(UIView *)view andSize:(CGSize)size;
 - (void)setLineOnBottomView:(UIView *)view andSize:(CGSize)size;
 
--(CGFloat)getX;
--(CGFloat)getY;
--(CGFloat)getW;
--(CGFloat)getH;
+ 
 
 
 @end

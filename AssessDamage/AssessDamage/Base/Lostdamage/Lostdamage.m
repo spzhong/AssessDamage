@@ -63,9 +63,13 @@
     double partsPrice_coefficient =  [self calculation_partsPrice:oneItem with:brand];
     oneItem.partsPrice_coefficient = partsPrice_coefficient;
     
-    //工时折扣系数
+    //工时系数
     double workTime_coefficient = [self calculation_workingHours:oneItem with:brand];
     oneItem.workTime_coefficient = workTime_coefficient;
+    
+    //工时折扣系数
+    double workTimeDiscount_coefficient = [self calculation_workTimeDiscount:oneItem with:brand];
+    oneItem.workTimeDiscount_coefficient = workTimeDiscount_coefficient;
     
     //品牌折扣系数
     double brand_coefficient = [self calculation_brand:oneItem with:brand];
@@ -105,7 +109,7 @@
     }
 }
 
-//工时折扣系数
+//工时系数
 -(double)calculation_workingHours:(LostItem *)oneItem with:(ManagementBrand *)brand{
     
     double workHours = 1.0;
@@ -140,13 +144,13 @@
 }
 
 
-//品牌折扣系数
--(double)calculation_brand:(LostItem *)oneItem with:(ManagementBrand *)brand{
+//工时折扣系数
+-(double)calculation_workTimeDiscount:(LostItem *)oneItem with:(ManagementBrand *)brand{
     
-    double brandCoefficient = 1.0;
+    double workTimeCoefficient = 1.0;
     //该factory4S尚未经营该品牌
     if (brand==nil) {
-        return [ConfigData getNoBrand:self.carInfo.brandId];
+        return workTimeCoefficient;
     }else{
         for (NSMutableDictionary *dic in brand.brandDiscountArray) {
             //车型属于该品牌
@@ -154,12 +158,26 @@
                 NSMutableArray *carDiscountArray = dic[@"carDiscountArray"];
                 for (NSMutableDictionary *dicOne in carDiscountArray) {
                     if ([dicOne[@"partsId"] isEqualToString:oneItem.partsId] &&  [dicOne[@"workItem"] intValue] ==oneItem.itemType) {
-                        return [dicOne[@"coefficient"] doubleValue] * brandCoefficient;
+                        return [dicOne[@"coefficient"] doubleValue] * workTimeCoefficient;
                     }
                 }
                 break;
             }
         }
+        return workTimeCoefficient;
+    }
+}
+
+
+
+//品牌折扣系数
+-(double)calculation_brand:(LostItem *)oneItem with:(ManagementBrand *)brand{
+    double brandCoefficient = 1.0;
+    //该factory4S尚未经营该品牌
+    if (brand==nil) {
+        return [ConfigData getNoBrand:self.carInfo.brandId];;
+    }else{
+        //如果是经营的品牌对应的是1.0
         return brandCoefficient;
     }
 }

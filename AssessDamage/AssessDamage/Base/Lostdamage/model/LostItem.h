@@ -34,7 +34,8 @@ typedef enum LostItemType {
 
 //计算得出的结果
 @property(nonatomic)double partsPrice_coefficient;//配件折扣系数
-@property(nonatomic)double workTime_coefficient;//工时折扣系数
+@property(nonatomic)double workTime_coefficient;//工时系数
+@property(nonatomic)double workTimeDiscount_coefficient;//工时折扣系数
 @property(nonatomic)double brand_coefficient;//品牌折扣系数
 @property(nonatomic)double carPrice_coefficient;//车价区间折扣系数
 @property(nonatomic)double city_coefficient;//地区系数

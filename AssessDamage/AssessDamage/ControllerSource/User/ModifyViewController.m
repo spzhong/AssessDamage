@@ -7,6 +7,7 @@
 //
 
 #import "ModifyViewController.h"
+#import "Verification.h"
 
 @interface ModifyViewController ()
 {

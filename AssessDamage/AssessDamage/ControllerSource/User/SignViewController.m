@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "User+CoreDataClass.h"
 #import "ForgetViewController.h"
+#import "Verification.h"
 
 
 @interface SignViewController ()<UIActionSheetDelegate>

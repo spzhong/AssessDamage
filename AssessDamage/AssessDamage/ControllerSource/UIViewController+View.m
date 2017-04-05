@@ -7,10 +7,12 @@
 //
 
 #import "UIViewController+View.h"
+#import "SlideView.h"
 
 @implementation UIViewController (View)
 
 -(void)iniLoadView{
+    
     //头部的信息
     UIScrollView *head = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 200)];
     head.contentSize = CGSizeMake(ScreenWidth*3, 200);
@@ -28,8 +30,26 @@
 
     //创建ITEM
     [self createItem];
+    
+    //创建左边滑动的栏目
+    [self leftViewSet];
      
 }
+ 
+- (void)leftViewSet
+{
+    CGFloat leftWidth = ScreenWidth-80;
+    SlideView *leftView = [[SlideView alloc]initWithFrame:CGRectMake(-leftWidth-5, 0, leftWidth, ScreenHeight) superView:AppWindow];
+    [AppWindow addSubview:leftView];
+    [leftView handle:^(NSInteger indexRow) {
+        NSLog(@"%d",(int)indexRow);
+        [leftView leftViewShow:NO];
+    }];
+    leftView.tag = 1988;
+    
+}
+
+
 
 -(void)createItem{
     

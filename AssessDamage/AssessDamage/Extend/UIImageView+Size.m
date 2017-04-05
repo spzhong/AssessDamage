@@ -7,15 +7,17 @@
 //
 
 #import "UIImageView+Size.h"
+#import "UIView+Category.h"
+
 
 @implementation UIImageView (Size)
 
 -(void)autorImgSize{
     UIImage *img = self.image;
     if(img){
-        self.frame = CGRectMake(self.getX, self.getY, img.size.width/2,img.size.height/2);
+        self.frame = CGRectMake(self.origin.x, self.origin.y, img.size.width/2,img.size.height/2);
     }else{
-        self.frame = CGRectMake(self.getX, self.getY, self.getW, self.getH);
+        self.frame = CGRectMake(self.origin.x, self.origin.y, self.size.width, self.size.height);
     }
 }
 

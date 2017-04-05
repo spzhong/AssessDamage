@@ -30,13 +30,14 @@
     NSLog(@"计算的结果{");
     NSLog(@"    配件折扣系数:%f",self.partsPrice_coefficient);
     NSLog(@"    工时系数:%f",self.workTime_coefficient);
+    NSLog(@"    工时折扣系数:%f",self.workTimeDiscount_coefficient);
     NSLog(@"    品牌折扣系数:%f",self.brand_coefficient);
     NSLog(@"    车价区间系数:%f",self.carPrice_coefficient);
     NSLog(@"    地区系数:%f",self.city_coefficient);
     NSLog(@"    标准工时:%.0f",self.standardWorkTime);
     NSLog(@"}计算的结果");
-    NSLog(@"当前配件折后的价格:%f",self.partsPrice_coefficient*self.partsPrice);
-    NSLog(@"当前配件所需的工时:%.0f",self.standardWorkTime*self.workTime_coefficient*self.brand_coefficient*self.carPrice_coefficient*self.city_coefficient);
+    NSLog(@"当前配件折后的价格:%.2f",[self final_partsPrice]);
+    NSLog(@"当前配件所需的工时:%.2f",[self final_workHours]);
     NSLog(@"配件信息############################################");
 }
 
@@ -72,7 +73,7 @@
 
 //最终的工时
 -(double)final_workHours{
-    return self.standardWorkTime*self.workTime_coefficient*self.brand_coefficient*self.carPrice_coefficient*self.city_coefficient;
+    return self.standardWorkTime*self.workTime_coefficient*self.brand_coefficient*self.carPrice_coefficient*self.city_coefficient*self.workTimeDiscount_coefficient;
 }
 
 

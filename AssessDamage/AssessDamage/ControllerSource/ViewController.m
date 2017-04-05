@@ -10,7 +10,8 @@
 #import "MyUser.h"
 #import "UIViewController+View.h"
 #import "Lostdamage.h"
- 
+#import "SlideView.h"
+
 
 @interface ViewController ()
 
@@ -28,14 +29,15 @@
     [my getData:@"hroror/qwwq" withPostDic:nil isReadFromCache:NO withBlock:^(BOOL success, id rep) {
     }];
     
-   // [self iniLoadView];
+    [self iniLoadView];
     
-   // [self rewriteLeftNav_title:@"用户" withBlock:^{
+    [self rewriteLeftNav_title:@"用户" withBlock:^{
+        SlideView *sli = [AppWindow viewWithTag:1988];
+        [sli leftViewShow:YES];
+    }];
+    [self rewriteRightNav_title:@"通知" withBlock:^{
         
-   // }];
-   // [self rewriteRightNav_title:@"通知" withBlock:^{
-        
-    //}];
+    }];
     
     [self lostdamage];
 }

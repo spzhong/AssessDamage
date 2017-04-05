@@ -9,7 +9,7 @@
 #import "ForgetViewController.h"
 #import "NSTimer+PauseTimerEMDT.h"
 #import "ModifyViewController.h"
-
+#import "Verification.h"
 
 @interface ForgetViewController ()
 {

@@ -48,6 +48,9 @@
 #define VCInStoryboard(storyboard, VCID)       [[UIStoryboard storyboardWithName:storyboard bundle:nil] instantiateViewControllerWithIdentifier:VCID]
 
 
+#define AppWindow [[[UIApplication sharedApplication] delegate] window]
+
+ 
 #define kThemeColor RGB(33,117,188)
 
 #endif /* Define_h */
