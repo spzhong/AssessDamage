@@ -23,6 +23,9 @@
     // Do any additional setup after loading the view from its nib.
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
+    __weak __typeof(self) weakSelf= self;
+    
+    
     [self rewriteBackButton];
     
     int y = 30;
@@ -60,16 +63,14 @@
     [leftBtn setBackgroundColor:kThemeColor];
     [[leftBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         
-        [self.view endEditing:YES];
-        
+        [weakSelf.view endEditing:YES];
         NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:0];
         [dic setObject:self.telephone forKey:@"telephone"];
         [dic setObject:self.code forKey:@"code"];
         [dic setObject:self.smsId forKey:@"smsId"];
         [dic setObject:codetext.text forKey:@"newPwd"];
         [dic setObject:codetext.text forKey:@"renewPwd"];
-        
-        [self.navigationController popToRootViewControllerAnimated:YES];
+        [weakSelf.navigationController popToRootViewControllerAnimated:YES];
  
     }];
     [self.view addSubview:leftBtn];

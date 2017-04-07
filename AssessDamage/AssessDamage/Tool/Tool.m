@@ -7,6 +7,7 @@
 //
 
 #import "Tool.h"
+#import "ErrorLog+CoreDataClass.h"
 
 @implementation Tool
 
@@ -86,6 +87,20 @@
     
 }
 
+
++(void)saveToErrorLog:(NSString *)url withPost:(NSMutableDictionary *)post withLog:(NSMutableDictionary *)diclog withDsc:(NSString *)des{
+    //进行将错误的信息记录
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"ErrorLog" inManagedObjectContext:[CoreData getDele].managedObjectContext];
+    ErrorLog *errorLog = (ErrorLog *)[[NSManagedObject alloc]initWithEntity:entity insertIntoManagedObjectContext:[CoreData getDele].managedObjectContext];
+    errorLog.userId = CurrUser.userId;
+    errorLog.time = [NSDate date];
+    errorLog.url = url;
+    errorLog.postDicString = [Tool dictionaryToJson:post];
+    errorLog.errorLog = [Tool dictionaryToJson:diclog];
+    errorLog.des = des;
+    [CoreData save_coredata];
+    //进行将错误的信息记录
+}
 
 
 @end

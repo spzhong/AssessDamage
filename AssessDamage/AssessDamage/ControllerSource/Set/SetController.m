@@ -17,16 +17,58 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    __weak __typeof(self) weakSelf= self;
     [self rewriteLeftNav_title:@"取消" withBlock:^{
-        [self dismissViewControllerAnimated:YES completion:NULL];
+        [weakSelf dismissViewControllerAnimated:YES completion:NULL];
     }];
     
+    
+    //创建一个表
+    [self configWithTable:^(UITableView *tabl) {
+        
+    } withSections:^NSInteger{
+        return 1;
+    } withSectionsInRow:^NSInteger(NSInteger section) {
+        return 1;
+    } withHeightForRow:^float(NSIndexPath *indexPath) {
+        return 44;
+    } withLoadCell:^UITableViewCell *(NSIndexPath *indexPath) {
+        
+        UITableViewCell *cell = (UITableViewCell *)[weakSelf.baseTableView dequeueReusableCellWithIdentifier:@"cell"];
+        if(!cell)
+        {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+            [cell setBackgroundColor:[UIColor whiteColor]];
+        }
+        
+        cell.textLabel.text = @"退出";
+        return cell;
+    } withSelectRow:^(NSIndexPath *indexPath) {
+        if (indexPath.row==0 && indexPath.section==0) {
+            [weakSelf exit];
+        }
+    }];
 }
+
+
+//退出
+-(void)exit{
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [[NSUserDefaults standardUserDefaults] setValue:nil forKey:@"currentUserId"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [self dismissViewControllerAnimated:YES completion:NULL];
+    //切换到登录的页面
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"kNFExchangeRootViewToLoginView" object:nil];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+ 
+
 
 /*
 #pragma mark - Navigation

@@ -28,11 +28,27 @@
 
 //创建model
 -(void)createModel:(NSMutableDictionary *)dic{
-    
-    self.key = [NSString stringWithFormat:@"%@",dic[@"key"]];
-    self.pId = [NSString stringWithFormat:@"%@",dic[@"pId"]];
-    
-    
+    CurrUser.userId = dic[@"userId"];
+    CurrUser.name = dic[@"name"];
+    CurrUser.cityId = dic[@"cityId"];
+    CurrUser.token = dic[@"token"];
+    CurrUser.userType = dic[@"userType"];
+    CurrUser.phone = dic[@"phone"];
+    CurrUser.enterpriseId = dic[@"enterpriseId"];
+    CurrUser.enterpriseName = dic[@"enterpriseName"];
+    CurrUser.regionId = dic[@"regionId"];
+    CurrUser.cityName = dic[@"cityName"];
+    CurrUser.regionName = dic[@"regionName"];
+}
+
+
+//清空用户数据
+-(void)clearUser{
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [[NSUserDefaults standardUserDefaults] setValue:nil forKey:@"currentUserId"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    //释放model数据
+    [self freeModel];
 }
 
 @end

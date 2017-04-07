@@ -39,8 +39,4 @@ typedef void(^FinishedGetData)(BOOL success,id rep);
 -(void)freeModel;
 
 
-
-
-
-
 @end

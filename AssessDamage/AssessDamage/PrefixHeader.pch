@@ -27,4 +27,5 @@
 #import "User+CoreDataClass.h"
 #import "Factory.h"
 #import "UILabel+Category.h"
+#import "DCProgressHUD.h"
 #endif /* PrefixHeader_pch */

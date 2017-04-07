@@ -10,6 +10,19 @@
 		6F07B15C1E812CDE00D7E221 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F07B15B1E812CDE00D7E221 /* NSString+Category.m */; };
 		6F07B15F1E812EB300D7E221 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F07B15E1E812EB300D7E221 /* Factory.m */; };
 		6F07B1621E812EE600D7E221 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F07B1611E812EE600D7E221 /* UIView+Category.m */; };
+		6F23D30E1E96101300DC15D2 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F23D30C1E96101300DC15D2 /* AboutViewController.m */; };
+		6F23D30F1E96101300DC15D2 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F23D30D1E96101300DC15D2 /* AboutViewController.xib */; };
+		6F23D3121E96113700DC15D2 /* BaseTabC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F23D3111E96113700DC15D2 /* BaseTabC.m */; };
+		6F23D3181E9668C200DC15D2 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F23D3151E9668C200DC15D2 /* SMS_SDK.framework */; };
+		6F23D3191E9668C200DC15D2 /* SMSUIVerificationCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F23D3171E9668C200DC15D2 /* SMSUIVerificationCodeViewController.m */; };
+		6F23D31E1E966B7100DC15D2 /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F23D31B1E966B7100DC15D2 /* RegViewController.m */; };
+		6F23D31F1E966B7100DC15D2 /* VerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F23D31D1E966B7100DC15D2 /* VerifyViewController.m */; };
+		6F23D3271E966DE500DC15D2 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F23D3241E966DE500DC15D2 /* MOBFoundation.framework */; };
+		6F23D3281E966DE500DC15D2 /* MOBFoundationEx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F23D3251E966DE500DC15D2 /* MOBFoundationEx.framework */; };
+		6F23D3291E966DE500DC15D2 /* SMSSDKUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6F23D3261E966DE500DC15D2 /* SMSSDKUI.bundle */; };
+		6F23D32C1E966E2C00DC15D2 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F23D32B1E966E2C00DC15D2 /* libicucore.tbd */; };
+		6F23D32E1E966E3900DC15D2 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F23D32D1E966E3900DC15D2 /* libstdc++.tbd */; };
+		6F23D33F1E966EE500DC15D2 /* SectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F23D33E1E966EE500DC15D2 /* SectionsViewController.m */; };
 		6F4F95091E8CEDC80053F9EB /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F95081E8CEDC80053F9EB /* Car.m */; };
 		6F4F950C1E8CEDDF0053F9EB /* LostItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F950B1E8CEDDF0053F9EB /* LostItem.m */; };
 		6F4F950F1E8CEDFE0053F9EB /* RepairFactory4S.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F950E1E8CEDFE0053F9EB /* RepairFactory4S.m */; };
@@ -37,9 +50,7 @@
 		6FDEA5031E948BD0001C2525 /* SignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA4FD1E948BD0001C2525 /* SignViewController.m */; };
 		6FDEA5041E948BD0001C2525 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA4FF1E948BD0001C2525 /* ViewController.m */; };
 		6FDEA50D1E949ECC001C2525 /* AppDelegate+JPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA50C1E949ECC001C2525 /* AppDelegate+JPush.m */; };
-		6FDEA5131E94A953001C2525 /* libsms-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDEA5121E94A953001C2525 /* libsms-lib.a */; };
 		6FDEA5171E94CC4B001C2525 /* MyUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA5161E94CC4B001C2525 /* MyUserController.m */; };
-		6FDEA51C1E94CCF3001C2525 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA51B1E94CCF3001C2525 /* AboutController.m */; };
 		6FDEA51F1E94CCFF001C2525 /* SetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA51E1E94CCFF001C2525 /* SetController.m */; };
 		6FDEA5241E94CFB1001C2525 /* MessageCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA5231E94CFB1001C2525 /* MessageCenterController.m */; };
 		6FDEA5271E94D01D001C2525 /* HistoryDamageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA5261E94D01D001C2525 /* HistoryDamageController.m */; };
@@ -68,6 +79,34 @@
 		6F07B15E1E812EB300D7E221 /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
 		6F07B1601E812EE600D7E221 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
 		6F07B1611E812EE600D7E221 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		6F23D30B1E96101300DC15D2 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		6F23D30C1E96101300DC15D2 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		6F23D30D1E96101300DC15D2 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		6F23D3101E96113700DC15D2 /* BaseTabC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabC.h; sourceTree = "<group>"; };
+		6F23D3111E96113700DC15D2 /* BaseTabC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabC.m; sourceTree = "<group>"; };
+		6F23D3151E9668C200DC15D2 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		6F23D3161E9668C200DC15D2 /* SMSUIVerificationCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSUIVerificationCodeViewController.h; sourceTree = "<group>"; };
+		6F23D3171E9668C200DC15D2 /* SMSUIVerificationCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSUIVerificationCodeViewController.m; sourceTree = "<group>"; };
+		6F23D31A1E966B7100DC15D2 /* RegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegViewController.h; sourceTree = "<group>"; };
+		6F23D31B1E966B7100DC15D2 /* RegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegViewController.m; sourceTree = "<group>"; };
+		6F23D31C1E966B7100DC15D2 /* VerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyViewController.h; sourceTree = "<group>"; };
+		6F23D31D1E966B7100DC15D2 /* VerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyViewController.m; sourceTree = "<group>"; };
+		6F23D3201E966BB700DC15D2 /* SMSUIVerificationCodeViewResultDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSUIVerificationCodeViewResultDef.h; sourceTree = "<group>"; };
+		6F23D3211E966C3400DC15D2 /* SectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsViewController.h; sourceTree = "<group>"; };
+		6F23D3221E966D4A00DC15D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6F23D3241E966DE500DC15D2 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		6F23D3251E966DE500DC15D2 /* MOBFoundationEx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundationEx.framework; sourceTree = "<group>"; };
+		6F23D3261E966DE500DC15D2 /* SMSSDKUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SMSSDKUI.bundle; sourceTree = "<group>"; };
+		6F23D32B1E966E2C00DC15D2 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		6F23D32D1E966E3900DC15D2 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		6F23D3301E966E5700DC15D2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		6F23D3321E966E5F00DC15D2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		6F23D3341E966E6800DC15D2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6F23D3361E966E7300DC15D2 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6F23D3381E966E7E00DC15D2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6F23D33A1E966E8B00DC15D2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6F23D33C1E966E9E00DC15D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6F23D33E1E966EE500DC15D2 /* SectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsViewController.m; sourceTree = "<group>"; };
 		6F4F95071E8CEDC80053F9EB /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		6F4F95081E8CEDC80053F9EB /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		6F4F950A1E8CEDDF0053F9EB /* LostItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostItem.h; sourceTree = "<group>"; };
@@ -122,14 +161,9 @@
 		6FDEA4FF1E948BD0001C2525 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6FDEA50B1E949ECC001C2525 /* AppDelegate+JPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JPush.h"; sourceTree = "<group>"; };
 		6FDEA50C1E949ECC001C2525 /* AppDelegate+JPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JPush.m"; sourceTree = "<group>"; };
-		6FDEA5101E94A953001C2525 /* JSMSConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMSConstant.h; sourceTree = "<group>"; };
-		6FDEA5111E94A953001C2525 /* JSMSSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMSSDK.h; sourceTree = "<group>"; };
-		6FDEA5121E94A953001C2525 /* libsms-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsms-lib.a"; sourceTree = "<group>"; };
 		6FDEA5141E94A985001C2525 /* AssessDamage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AssessDamage.entitlements; sourceTree = "<group>"; };
 		6FDEA5151E94CC4B001C2525 /* MyUserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUserController.h; sourceTree = "<group>"; };
 		6FDEA5161E94CC4B001C2525 /* MyUserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUserController.m; sourceTree = "<group>"; };
-		6FDEA51A1E94CCF3001C2525 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
-		6FDEA51B1E94CCF3001C2525 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
 		6FDEA51D1E94CCFF001C2525 /* SetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetController.h; sourceTree = "<group>"; };
 		6FDEA51E1E94CCFF001C2525 /* SetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetController.m; sourceTree = "<group>"; };
 		6FDEA5221E94CFB1001C2525 /* MessageCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCenterController.h; sourceTree = "<group>"; };
@@ -169,15 +203,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FDEA5131E94A953001C2525 /* libsms-lib.a in Frameworks */,
+				6F23D32E1E966E3900DC15D2 /* libstdc++.tbd in Frameworks */,
+				6F23D32C1E966E2C00DC15D2 /* libicucore.tbd in Frameworks */,
+				6F23D3271E966DE500DC15D2 /* MOBFoundation.framework in Frameworks */,
+				6F23D3181E9668C200DC15D2 /* SMS_SDK.framework in Frameworks */,
 				6FFF758F1E7FDF7F00C72937 /* CoreData.framework in Frameworks */,
 				F48854C59308925ECC0D8788 /* libPods-AssessDamage.a in Frameworks */,
+				6F23D3281E966DE500DC15D2 /* MOBFoundationEx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F23D3141E9668C200DC15D2 /* SMSSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6F23D33E1E966EE500DC15D2 /* SectionsViewController.m */,
+				6F23D3241E966DE500DC15D2 /* MOBFoundation.framework */,
+				6F23D3251E966DE500DC15D2 /* MOBFoundationEx.framework */,
+				6F23D3261E966DE500DC15D2 /* SMSSDKUI.bundle */,
+				6F23D3211E966C3400DC15D2 /* SectionsViewController.h */,
+				6F23D3201E966BB700DC15D2 /* SMSUIVerificationCodeViewResultDef.h */,
+				6F23D31A1E966B7100DC15D2 /* RegViewController.h */,
+				6F23D31B1E966B7100DC15D2 /* RegViewController.m */,
+				6F23D31C1E966B7100DC15D2 /* VerifyViewController.h */,
+				6F23D31D1E966B7100DC15D2 /* VerifyViewController.m */,
+				6F23D3151E9668C200DC15D2 /* SMS_SDK.framework */,
+				6F23D3161E9668C200DC15D2 /* SMSUIVerificationCodeViewController.h */,
+				6F23D3171E9668C200DC15D2 /* SMSUIVerificationCodeViewController.m */,
+			);
+			path = SMSSDK;
+			sourceTree = "<group>";
+		};
 		6F4F95061E8CEDBD0053F9EB /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,7 +268,7 @@
 		6FDEA4E91E94863E001C2525 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				6FDEA50E1E94A953001C2525 /* JsmsSDK */,
+				6F23D3141E9668C200DC15D2 /* SMSSDK */,
 				6FDEA4EA1E94863E001C2525 /* SlideView */,
 			);
 			path = lib;
@@ -258,29 +316,12 @@
 			path = User;
 			sourceTree = "<group>";
 		};
-		6FDEA50E1E94A953001C2525 /* JsmsSDK */ = {
-			isa = PBXGroup;
-			children = (
-				6FDEA50F1E94A953001C2525 /* include */,
-				6FDEA5121E94A953001C2525 /* libsms-lib.a */,
-			);
-			path = JsmsSDK;
-			sourceTree = "<group>";
-		};
-		6FDEA50F1E94A953001C2525 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				6FDEA5101E94A953001C2525 /* JSMSConstant.h */,
-				6FDEA5111E94A953001C2525 /* JSMSSDK.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
 		6FDEA5181E94CCDA001C2525 /* About */ = {
 			isa = PBXGroup;
 			children = (
-				6FDEA51A1E94CCF3001C2525 /* AboutController.h */,
-				6FDEA51B1E94CCF3001C2525 /* AboutController.m */,
+				6F23D30B1E96101300DC15D2 /* AboutViewController.h */,
+				6F23D30C1E96101300DC15D2 /* AboutViewController.m */,
+				6F23D30D1E96101300DC15D2 /* AboutViewController.xib */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -315,6 +356,16 @@
 		6FFF758D1E7FDF7F00C72937 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F23D33C1E966E9E00DC15D2 /* CoreGraphics.framework */,
+				6F23D33A1E966E8B00DC15D2 /* MessageUI.framework */,
+				6F23D3381E966E7E00DC15D2 /* Security.framework */,
+				6F23D3361E966E7300DC15D2 /* JavaScriptCore.framework */,
+				6F23D3341E966E6800DC15D2 /* SystemConfiguration.framework */,
+				6F23D3321E966E5F00DC15D2 /* CoreTelephony.framework */,
+				6F23D3301E966E5700DC15D2 /* AdSupport.framework */,
+				6F23D32D1E966E3900DC15D2 /* libstdc++.tbd */,
+				6F23D32B1E966E2C00DC15D2 /* libicucore.tbd */,
+				6F23D3221E966D4A00DC15D2 /* libz.tbd */,
 				6FFF758E1E7FDF7F00C72937 /* CoreData.framework */,
 				7CF7974F6A548F5E0733AD96 /* libPods-AssessDamage.a */,
 			);
@@ -396,6 +447,8 @@
 			children = (
 				DAB0F2241E7E0B4000120478 /* BaseC.h */,
 				DAB0F2251E7E0B4000120478 /* BaseC.m */,
+				6F23D3101E96113700DC15D2 /* BaseTabC.h */,
+				6F23D3111E96113700DC15D2 /* BaseTabC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -560,6 +613,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB0F2511E7E1A1600120478 /* Config.plist in Resources */,
+				6F23D30F1E96101300DC15D2 /* AboutViewController.xib in Resources */,
+				6F23D3291E966DE500DC15D2 /* SMSSDKUI.bundle in Resources */,
 				DAB0F1EF1E7E07F500120478 /* LaunchScreen.storyboard in Resources */,
 				DAB0F1EC1E7E07F500120478 /* Assets.xcassets in Resources */,
 				6F4F951B1E8D28970053F9EB /* NoBrand.plist in Resources */,
@@ -633,6 +688,7 @@
 				DAB0F24F1E7E185D00120478 /* NSObject+Property.m in Sources */,
 				6FFF75D51E80D52A00C72937 /* AssessDamage.xcdatamodeld in Sources */,
 				6FDEA5241E94CFB1001C2525 /* MessageCenterController.m in Sources */,
+				6F23D3191E9668C200DC15D2 /* SMSUIVerificationCodeViewController.m in Sources */,
 				6FDEA4F01E94863E001C2525 /* UIView+Ext.m in Sources */,
 				6FDEA51F1E94CCFF001C2525 /* SetController.m in Sources */,
 				6FDEA4F31E948991001C2525 /* Verification.m in Sources */,
@@ -640,19 +696,23 @@
 				DAB0F2201E7E0B1000120478 /* BaseM.m in Sources */,
 				DAB0F2181E7E0AB000120478 /* AppDelegate.m in Sources */,
 				6FDEA4EF1E94863E001C2525 /* SlideView.m in Sources */,
+				6F23D3121E96113700DC15D2 /* BaseTabC.m in Sources */,
 				6F70512F1E80F87600272550 /* Cache+CoreDataProperties.m in Sources */,
 				6F594CA71E84F2C3005F9B24 /* UILabel+Category.m in Sources */,
 				6F7051291E80F66D00272550 /* User+CoreDataProperties.m in Sources */,
 				6F7051321E80F8E600272550 /* CoreData.m in Sources */,
+				6F23D31E1E966B7100DC15D2 /* RegViewController.m in Sources */,
 				6FDEA5041E948BD0001C2525 /* ViewController.m in Sources */,
 				6F4F950F1E8CEDFE0053F9EB /* RepairFactory4S.m in Sources */,
 				6F07B1621E812EE600D7E221 /* UIView+Category.m in Sources */,
+				6F23D30E1E96101300DC15D2 /* AboutViewController.m in Sources */,
 				DAB0F2261E7E0B4000120478 /* BaseC.m in Sources */,
 				6F4F95091E8CEDC80053F9EB /* Car.m in Sources */,
 				6FDEA5001E948BD0001C2525 /* UIViewController+View.m in Sources */,
 				DAB0F2231E7E0B2700120478 /* BaseV.m in Sources */,
 				6F70512E1E80F87600272550 /* Cache+CoreDataClass.m in Sources */,
 				DAB0F2551E7E1D1D00120478 /* Tool.m in Sources */,
+				6F23D33F1E966EE500DC15D2 /* SectionsViewController.m in Sources */,
 				6FDEA5021E948BD0001C2525 /* ModifyViewController.m in Sources */,
 				6F4F950C1E8CEDDF0053F9EB /* LostItem.m in Sources */,
 				DAB0F24B1E7E16BC00120478 /* MyUser.m in Sources */,
@@ -663,8 +723,8 @@
 				6F4F95151E8D11B60053F9EB /* ConfigData.m in Sources */,
 				6FA0120A1E8734090003E649 /* NSTimer+PauseTimerEMDT.m in Sources */,
 				6FDEA5271E94D01D001C2525 /* HistoryDamageController.m in Sources */,
-				6FDEA51C1E94CCF3001C2525 /* AboutController.m in Sources */,
 				6F07B15C1E812CDE00D7E221 /* NSString+Category.m in Sources */,
+				6F23D31F1E966B7100DC15D2 /* VerifyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,6 +848,11 @@
 				CODE_SIGN_ENTITLEMENTS = AssessDamage/AssessDamage.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WC7LZN7T9K;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AssessDamage/lib/SMSSDK",
+				);
 				GCC_PREFIX_HEADER = AssessDamage/PrefixHeader.pch;
 				INFOPLIST_FILE = AssessDamage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -798,6 +863,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.AssessDamage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -809,6 +875,11 @@
 				CODE_SIGN_ENTITLEMENTS = AssessDamage/AssessDamage.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WC7LZN7T9K;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AssessDamage/lib/SMSSDK",
+				);
 				GCC_PREFIX_HEADER = AssessDamage/PrefixHeader.pch;
 				INFOPLIST_FILE = AssessDamage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -819,6 +890,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.AssessDamage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

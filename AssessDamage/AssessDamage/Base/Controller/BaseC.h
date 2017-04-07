@@ -22,8 +22,16 @@
 //点击导航右边的按钮
 -(void)rewriteRightNav_title:(NSString *)title withBlock:(void (^)())touch;
 
-//点击导航右边的按钮
+//点击导航左边的按钮
 -(void)rewriteLeftNav_title:(NSString *)title withBlock:(void (^)())touch;
 
+//返回pop上几层的:默认是1，返回上一层
+-(void)poplastControllerwithNum:(int)num;
+
+//删除上一个controller
+-(void)deleteLastViewController;
+
+//释放
+-(void)dealloc;
 
 @end

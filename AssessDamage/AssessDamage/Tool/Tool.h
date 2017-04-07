@@ -21,4 +21,7 @@
 
 +(NSArray *)readNoBrand;
 
++(void)saveToErrorLog:(NSString *)url withPost:(NSMutableDictionary *)post withLog:(NSMutableDictionary *)diclog withDsc:(NSString *)des;
+
+
 @end

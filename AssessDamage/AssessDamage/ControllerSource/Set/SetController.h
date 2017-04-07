@@ -6,8 +6,8 @@
 //  Copyright © 2017年 damage. All rights reserved.
 //
 
-#import "BaseC.h"
+#import "BaseTabC.h"
 
-@interface SetController : BaseC
+@interface SetController : BaseTabC
 
 @end

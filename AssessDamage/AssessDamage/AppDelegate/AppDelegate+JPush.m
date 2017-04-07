@@ -13,19 +13,32 @@
 
 //配置极光推送
 -(void)configJPush{
-    
-    [JPUSHService setupWithOption:nil appKey:@"afc14e88c6b60862b8233b7b" channel:@"ios" apsForProduction:NO];
-    
-    [JSMSSDK registerWithAppKey:@"afc14e88c6b60862b8233b7b"];
-    [JSMSSDK setMinimumTimeInterval:60];
+     
+    JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
+    entity.types = JPAuthorizationOptionAlert|JPAuthorizationOptionBadge|JPAuthorizationOptionSound;
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+        // 可以添加自定义categories
+        // NSSet<UNNotificationCategory *> *categories for iOS10 or later
+        // NSSet<UIUserNotificationCategory *> *categories for iOS8 and iOS9
+    }
+    [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
+}
+
+
+//登录后注册推送的服务
+-(void)loginAfter_JPUSHService{
+    [JPUSHService setupWithOption:nil appKey:@"afc14e88c6b60862b8233b7b" channel:CurrUser.enterpriseId apsForProduction:NO];
 }
 
 
 
+
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    
     /// Required - 注册 DeviceToken
     [JPUSHService registerDeviceToken:deviceToken];
+    //同时需要告知我们自己的服务器
+    
+    
 }
 
 

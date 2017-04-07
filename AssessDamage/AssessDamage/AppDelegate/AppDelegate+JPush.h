@@ -16,7 +16,7 @@
 #endif
 // 如果需要使用idfa功能所需要引入的头文件（可选）
 #import <AdSupport/AdSupport.h>
-#import "JSMSSDK.h"
+ 
 
 
 
@@ -24,6 +24,8 @@
 
 //配置极光推送
 -(void)configJPush;
+//登录后注册推送的服务
+-(void)loginAfter_JPUSHService;
 
 
 @end

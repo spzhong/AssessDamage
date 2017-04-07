@@ -92,7 +92,9 @@
             errorLog.time = [NSDate date];
             errorLog.url = url;
             errorLog.postDicString = [Tool dictionaryToJson:dic];
-            errorLog.errorLog = [Tool dictionaryToJson:responseObject];;
+            errorLog.errorLog = [Tool dictionaryToJson:responseObject];
+            NSDictionary *config = [Tool readConfigWithKey:url];
+            errorLog.des = config[@"des"];
             [CoreData save_coredata];
             //进行将错误的信息记录
         }

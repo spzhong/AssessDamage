@@ -40,7 +40,7 @@
     // Do any additional setup after loading the view from its nib.
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    
+    __weak __typeof(self) weakSelf= self;
     
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"currentUserId"];
     isshow = YES;
@@ -63,10 +63,7 @@
     [bg addSubview:title];
     
     
-    
-   
-    
-    
+     
     
     y = (32+40);
     moblietext =  [[UITextField alloc] initWithFrame:CGRectMake(15, y, ScreenWidth-30, 44)];
@@ -115,8 +112,8 @@
     [[fogetCode rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         ForgetViewController *foget = [[ForgetViewController alloc] init];
         foget.title = @"忘记密码";
-        self.navigationController.navigationBar.hidden = NO;
-        [self.navigationController pushViewController:foget animated:YES];
+        weakSelf.navigationController.navigationBar.hidden = NO;
+        [weakSelf.navigationController pushViewController:foget animated:YES];
     }];
 
     //登录

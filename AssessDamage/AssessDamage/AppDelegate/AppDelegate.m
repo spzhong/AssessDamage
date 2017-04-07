@@ -11,7 +11,12 @@
 #import "SignViewController.h"
 #import "MyUser.h"
 #import "AppDelegate+JPush.h"
+#import "RegViewController.h"
 
+
+//SMSSDK官网公共key
+#define appkey @"f3fc6baa9ac4"
+#define app_secrect @"7f3dedcb36d92deebcb373af921d635a"
 
 @interface AppDelegate ()
 
@@ -23,6 +28,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    //配置短信
+    [SMSSDK registerApp:appkey withSecret:app_secrect];
     
     //配置及极光
     [self configJPush];
@@ -38,9 +45,8 @@
     //判断用户是否进行了登录
     if (CurrUser==nil) {
         //未登录
-        SignViewController *sign = [[SignViewController alloc] init];
-        UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:sign];
-        self.window.rootViewController = na;
+        [self exchangeRootViewControllerToLogin];
+        
     }else{
         [self exchangeRootViewControllerToMain];
     }
@@ -54,7 +60,14 @@
     
     // 用来切换的主界面
     [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"kNFExchangeRootViewToMainView" object:nil] subscribeNext:^(NSNotification *x) {
+        //进行获取用户的信息
+        NSString *phone = x.userInfo[@"phone"];
+        NSString *code = x.userInfo[@"code"];
+        
+        
         [self exchangeRootViewControllerToMain];
+        [self loginAfter_JPUSHService];
+        
     }];
 
     
@@ -74,9 +87,28 @@
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"currentUserId"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     //进入登录的页面
-    SignViewController *sign = [[SignViewController alloc] init];
-    UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:sign];
-    self.window.rootViewController = na;
+    //SignViewController *sign = [[SignViewController alloc] init];
+    
+    RegViewController *registerViewBySMS = [[RegViewController alloc] init];
+    registerViewBySMS.getCodeMethod = SMSGetCodeMethodSMS;
+    registerViewBySMS.verificationCodeResult = ^(enum SMSUIResponseState state,NSString *phoneNumber,NSString *zone,NSError *error){
+        
+        if (state == SMSUIResponseStateCancel)
+        {
+        }
+        else if (state == SMSUIResponseStateSuccess )
+        {
+            
+        }
+        else if (state == SMSUIResponseStateFail )
+        {
+            
+        }
+
+    };
+    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:registerViewBySMS];
+    self.window.rootViewController = navc;
+    
 }
 
 

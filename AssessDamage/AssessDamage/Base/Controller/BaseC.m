@@ -48,7 +48,9 @@
 -(void)rewriteRightNav_title:(NSString *)title withBlock:(void (^)())touch{
     UIButton *leftBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 70, 22)];
     [[leftBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        touch();
+        dispatch_async(dispatch_get_main_queue(), ^{
+            touch();
+        });
     }];
     UILabel *labBack = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 70, 22)];
     labBack.text = title;
@@ -65,7 +67,9 @@
 -(void)rewriteLeftNav_title:(NSString *)title withBlock:(void (^)())touch{
     UIButton *leftBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0,35, 22)];
     [[leftBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        touch();
+        dispatch_async(dispatch_get_main_queue(), ^{
+            touch();
+        });
     }];
     UILabel *labBack = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 35, 22)];
     labBack.text = title;
@@ -89,6 +93,44 @@
     return self.dataArray.firstObject;
 }
 
+
+
+/**
+ *  返回pop上几层的
+ *
+ *  @param num 默认是1，返回上一层
+ */
+-(void)poplastControllerwithNum:(int)num {
+    NSArray *arrayview = self.navigationController.viewControllers;
+    if (num < 1 || num > arrayview.count) {
+        return;
+    }
+    NSInteger start = [arrayview count] -num-1;
+    if (start==0) {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }else{
+        UIViewController *view = arrayview[[arrayview count] -num-1];
+        [self.navigationController popToViewController:view animated:YES];
+    }
+}
+
+//删除上一个controller
+-(void)deleteLastViewController{
+    NSArray *arrayview = self.navigationController.viewControllers;
+    if (arrayview.count>2) {
+        NSMutableArray *newArray = [NSMutableArray arrayWithCapacity:0];
+        for (int  i =0; i < arrayview.count; i++) {
+            if (i == arrayview.count-2) {
+                continue;
+            }
+            [newArray addObject:arrayview[i]];
+        }
+        self.navigationController.viewControllers = newArray;
+    }
+}
+
+
+
 /*
 #pragma mark - Navigation
 
@@ -98,9 +140,8 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-
 -(void)dealloc{
+    NSLog(@"\n\n\n-----------%@dealloc-----------\n\n\n",self.title);
     
 }
 

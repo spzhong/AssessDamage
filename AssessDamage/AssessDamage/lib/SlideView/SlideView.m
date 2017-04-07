@@ -59,7 +59,7 @@
     self.layer.shadowPath =[UIBezierPath bezierPathWithRect:self.bounds].CGPath;
     
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.sizeWidth, ScreenHeight) style:UITableViewStyleGrouped];
-    self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(40, 0, 0, 0);
     
     self.tableView.scrollEnabled = NO;
     

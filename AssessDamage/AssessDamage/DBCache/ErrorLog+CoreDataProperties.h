@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *userId;
 @property (nullable, nonatomic, copy) NSString *postDicString;
 @property (nullable, nonatomic, copy) NSString *errorLog;
+@property (nullable, nonatomic, copy) NSString *des;
+
 
 @end
 

@@ -9,6 +9,8 @@
 		<true/>
 		<key>model</key>
 		<string>MyUser</string>
+		<key>des</key>
+		<string>接口描述</string>
 	</dict>
 </array>
 </plist>

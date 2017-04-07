@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"定损";
-
+ 
     MyUser *my = [[MyUser alloc] init];
     //获取数据
     [my getData:@"hroror/qwwq" withPostDic:nil isReadFromCache:NO withBlock:^(BOOL success, id rep) {

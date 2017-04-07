@@ -19,5 +19,6 @@
 @dynamic userId;
 @dynamic postDicString;
 @dynamic errorLog;
+@dynamic des;
 
 @end

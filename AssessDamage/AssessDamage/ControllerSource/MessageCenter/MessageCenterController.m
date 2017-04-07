@@ -17,8 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    __weak __typeof(self) weakSelf= self;
     [self rewriteLeftNav_title:@"取消" withBlock:^{
-        [self dismissViewControllerAnimated:YES completion:NULL];
+        [weakSelf dismissViewControllerAnimated:YES completion:NULL];
     }];
     
 }

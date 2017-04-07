@@ -15,11 +15,10 @@
 
 @interface MyUser : BaseM<BaseMDelagete>
 
-@property(nonatomic,retain)NSString *userId;
-@property(nonatomic,retain)NSString *pId;
-@property(nonatomic,retain)NSString *key;
 
 //获取当前的用户
 +(User *)currUser;
+//清空用户数据
+-(void)clearUser;
 
 @end

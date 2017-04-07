@@ -53,4 +53,6 @@
  
 #define kThemeColor RGB(33,117,188)
 
+#define AppVersion  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
 #endif /* Define_h */

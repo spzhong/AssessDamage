@@ -10,7 +10,7 @@
 #import "SlideView.h"
 #import "MyUserController.h"
 #import "SetController.h"
-#import "AboutController.h"
+#import "AboutViewController.h"
 #import "MessageCenterController.h"
 #import "HistoryDamageController.h"
 
@@ -55,7 +55,7 @@
             UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:my];
             [self presentViewController:na animated:YES completion:NULL];
         }else if (indexRow==-2) {//关于
-            AboutController *about = [[AboutController alloc] init];
+            AboutViewController *about = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
             about.title = @"关于";
             UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:about];
             [self presentViewController:na animated:YES completion:NULL];
