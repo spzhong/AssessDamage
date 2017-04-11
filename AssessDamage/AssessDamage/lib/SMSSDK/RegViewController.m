@@ -83,13 +83,15 @@
 
 - (void)getVerificationCodeByMethod:(SMSGetCodeMethod)getCodeMethod phoneNumber:(NSString *)phoneNumber zone:(NSString *)zone
 {
+    
+    [DCProgressHUD showHUDLoading:self.view text:@"加载中..."];
     __weak RegViewController *regViewController = self;
     [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:phoneNumber
                                    zone:zone
                        customIdentifier:nil
                                  result:^(NSError *error)
      {
-         
+         [DCProgressHUD hideHUDView:self.view];
          [regViewController getVerificationCodeResultHandler:phoneNumber zone:zone error:error];
          
      }];

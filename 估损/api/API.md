@@ -8,10 +8,16 @@
 
 + Request  (application/json)
 
-  {
-  	"phone": "手机号",
-  	"password": "登录密码"
-  }
+   {
+  "phone": "手机号",
+  "smsCode": "短信验证码",
+  "device": {
+  		"name":"设备名称",
+  		"model":"设备的型号(iPad、iphone、ipod touch)",
+  		"systemName":"系统",
+  		"systemVersion":"系统版本"      
+    	},//设备信息
+   }
 
 + Response 200
 
@@ -604,6 +610,8 @@ code=1
  	"userId":"用户的id",
 	"lostdamageId":"估损单id",
 	"sixCode":"估损单对应的当前的六位码",
+	"repairFactory":"修理厂的id",
+	"insuranceCompany":"保险公司的id"
 }
 ```
 

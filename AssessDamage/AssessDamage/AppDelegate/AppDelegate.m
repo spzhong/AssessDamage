@@ -53,6 +53,7 @@
     
     
     
+    
     // 用通知来切换登录
     [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"kNFExchangeRootViewToLoginView" object:nil] subscribeNext:^(NSNotification *x) {
         [self exchangeRootViewControllerToLogin];
@@ -63,14 +64,17 @@
         //进行获取用户的信息
         NSString *phone = x.userInfo[@"phone"];
         NSString *code = x.userInfo[@"code"];
+        NSMutableDictionary *deviceInfo = [Tool deviceInfo];
+        
+        
+        
+        
         
         
         [self exchangeRootViewControllerToMain];
-        [self loginAfter_JPUSHService];
+        //[self loginAfter_JPUSHService];
         
     }];
-
-    
     return YES;
 }
 

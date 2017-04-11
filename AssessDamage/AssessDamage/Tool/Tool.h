@@ -23,5 +23,7 @@
 
 +(void)saveToErrorLog:(NSString *)url withPost:(NSMutableDictionary *)post withLog:(NSMutableDictionary *)diclog withDsc:(NSString *)des;
 
+//获取设备信息
++(NSMutableDictionary *)deviceInfo;
 
 @end

@@ -103,4 +103,21 @@
 }
 
 
+//NSString    *name;              // e.g. "My iPhone"
+//@property(nonatomic,readonly,strong) NSString    *model;             // e.g. @"iPhone", @"iPod touch"
+//@property(nonatomic,readonly,strong) NSString    *localizedModel;    // localized version of model
+//@property(nonatomic,readonly,strong) NSString    *systemName;        // e.g. @"iOS"
+//@property(nonatomic,readonly,strong) NSString    *systemVersion;
+
+
+//获取设备信息
++(NSMutableDictionary *)deviceInfo{
+    NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:0];
+    UIDevice *device = [UIDevice currentDevice];
+    [dic setValue:device.name forKey:@"name"];
+    [dic setValue:device.model forKey:@"model"];
+    [dic setValue:device.systemName forKey:@"systemName"];
+    [dic setValue:device.systemVersion forKey:@"systemVersion"];
+    return dic;
+}
 @end

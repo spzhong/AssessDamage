@@ -67,8 +67,21 @@ static int count = 0;
     if (msg.length>0) {
         [DCProgressHUD showHUDText:msg];
     }else{
+        
+        [DCProgressHUD showHUDLoading:self.view text:@"加载中..."];
         [SMSSDK commitVerificationCode:[Verification newsmsCode:self.verifyCodeField.text]  phoneNumber:_phone zone:_areaCode result:^(SMSSDKUserInfo *userInfo, NSError *error) {
             {
+                [DCProgressHUD hideHUDView:self.view];
+                
+                
+                //验证成功了
+                [self dismissViewControllerAnimated:YES completion:NULL];
+                //保存当前的手机号
+                [[NSUserDefaults standardUserDefaults] setObject:_phone forKey:@"curPhone"];
+                //切换到主页
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"kNFExchangeRootViewToMainView" object:nil userInfo:[NSMutableDictionary dictionaryWithObjectsAndKeys:_phone,@"phone",[Verification newsmsCode:self.verifyCodeField.text],@"code",nil]];
+                
+                return;
                 if (!error)
                 {
                     //验证成功了

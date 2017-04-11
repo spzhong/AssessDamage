@@ -37,7 +37,7 @@
     [self createItem];
     
     //创建左边滑动的栏目
-    [self leftViewSet];
+    //[self leftViewSet];
      
 }
  
@@ -87,7 +87,7 @@
     float w = (ScreenWidth-40)/3;
     
     UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
-    [but setTitle:@"创建定损单" forState:UIControlStateNormal];
+    [but setTitle:@"创建估损单" forState:UIControlStateNormal];
     but.frame = CGRectMake(10, y, w, w);
     [but setBackgroundColor:[UIColor redColor]];
     [[but rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
@@ -96,7 +96,7 @@
     [self.view addSubview:but];
     
     UIButton *but1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [but1 setTitle:@"修改定损单" forState:UIControlStateNormal];
+    [but1 setTitle:@"历史估损单" forState:UIControlStateNormal];
     but1.frame = CGRectMake(20+w, y, w, w);
     [but1 setBackgroundColor:[UIColor redColor]];
     [[but1 rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
@@ -104,14 +104,14 @@
     }];
     [self.view addSubview:but1];
     
-    UIButton *but2 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [but2 setTitle:@"分享定损单" forState:UIControlStateNormal];
-    but2.frame = CGRectMake(30+2*w, y, w, w);
-    [but2 setBackgroundColor:[UIColor redColor]];
-    [[but2 rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        
-    }];
-    [self.view addSubview:but2];
+//    UIButton *but2 = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [but2 setTitle:@"分享定损单" forState:UIControlStateNormal];
+//    but2.frame = CGRectMake(30+2*w, y, w, w);
+//    [but2 setBackgroundColor:[UIColor redColor]];
+//    [[but2 rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+//        
+//    }];
+//    [self.view addSubview:but2];
     
 }
 
